@@ -1,0 +1,262 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+html{
+  scroll-behavior: smooth;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev img, .next img{
+  display: block;
+  width: 50%;
+}
+
+.prev:hover{
+  transition: 0.5s ease;
+  padding-left: 4rem;
+}
+.next:hover{
+  transition: 0.5s ease;
+  padding-right: 4rem;
+}
+.prev, .next {
+  transition: 0.5s ease;
+  padding-left: 5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  padding-left: 0rem;
+  padding-right: 5rem;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.kolom {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.kolom1{
+    -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .kolom2 {
+    -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .kolom3 {
+    -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .kolom4 {
+    -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .kolom5{
+    -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .kolom6{
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .kolom7{
+    -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .kolom8{
+    -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .kolom9 {
+    -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .kolom10 {
+    -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .kolom11 {
+    -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .kolom12 {
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 85px;
+  margin: 0 1px;
+  background-color: #bbb;
+  border-radius: 35px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #4174ff;
+}
+
+/* Fading animation */
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+@font-face {
+  font-family: 'gilroy-extrabold';
+  src: url("gilroy-extrabold.otf") format("opentype");
+}
+@font-face {
+  font-family: 'gilroy-light';
+  src: url("gilroy-light.otf") format("opentype");
+}
+.arrow{
+  width: 90%;
+  padding-left: 5rem;
+}
+
+.navbar{
+  font-size: 20px ;
+  position: absolute;
+  margin-top: 3rem;
+}
+
+.nav{
+  margin: 25px;
+  color: white;
+}
+
+.white{
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.title{
+  cursor: default;
+  display: block;
+  text-align: center;
+  font-size: 10rem;
+  position: absolute;
+  margin-left: 20.5rem;
+  padding-top: 40px;
+  z-index: 0;
+  transition: 0.5s ease;
+}
+
+.title:hover{
+  transition: 0.5 ease;
+  z-index: 10;
+  text-shadow: 1rem 1rem black;
+}
+
+.particle{
+  width: 65%;
+  position: absolute;
+  margin-left: 240px;
+  margin-top: 200px;
+}
+
+.primaryfont{
+  font-family: gilroy-extrabold;
+}
+
+.secondaryfont{
+  font-family: gilroy-light;
+}
+
+.wrapper{
+  text-align:center;
+  height:100%;
+}
+
+.slider{
+  position: absolute;
+  margin-left: 42rem;
+  padding-top: 35rem;
+  z-index: 20;
+}
+
+body { 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.content .primaryfont{
+font-size: 40px;
+margin-top: 180px;
+}
+
+.content .secondaryfont{
+  font-size: 20px;
+  padding-right: 8rem;
+  text-align: justify;
+}

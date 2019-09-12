@@ -69,7 +69,7 @@ html{
   }
   .kolom4 {
     -ms-flex: 0 0 33.333333%;
-        flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%; 
     max-width: 33.333333%;
   }
   .kolom5{
@@ -131,6 +131,11 @@ html{
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+
+.badge{
+  margin-left: 4rem;
+  font-size: 35px !important;
 }
 
 /* The dots/bullets/indicators */
@@ -210,6 +215,9 @@ html{
 .white{
   color: white;
 }
+.red{
+  color: red;
+}
 a {
   text-decoration: none;
 }
@@ -228,7 +236,7 @@ a {
 .title:hover{
   transition: 0.5 ease;
   z-index: 10;
-  text-shadow: 1rem 1rem black;
+  text-shadow: 0.75rem 0.75rem black;
 }
 
 .particle{
@@ -244,6 +252,7 @@ a {
 
 .secondaryfont{
   font-family: gilroy-light;
+  font-size: 20px;
 }
 
 .wrapper{
@@ -254,7 +263,7 @@ a {
 .slider{
   position: absolute;
   margin-left: 42rem;
-  padding-top: 35rem;
+  padding-top: 34rem;
   z-index: 20;
 }
 
@@ -273,7 +282,7 @@ margin-top: 180px;
 
 .content .secondaryfont{
   font-size: 20px;
-  padding-right: 8rem;
+  padding-right: 12rem;
   text-align: justify;
 }
 /*tes*/
@@ -284,11 +293,7 @@ margin-top: 180px;
 
 #carousel {
   width:100%;
-  height:280px;
-  position:relative;
-  clear:both;
-  overflow:hidden;
-  background:#FFF;
+  padding-top: 16rem;
 }
 #carousel img {
   visibility:hidden; /* hide images until carousel can handle them */
@@ -299,5 +304,14 @@ margin-top: 180px;
 }
 
 .profile{
-  padding-top: 5rem;
+  text-align: center;
+}
+
+.profile .primaryfont{
+  font-size: 40px;
+  }
+
+.tab{
+  padding: 0 30rem;
+  text-align: center;
 }

@@ -21,6 +21,9 @@ $(document).ready(function () {
 
   $('#prev').bind('click', function () {
     carousel.prev();
+    $('#tab1').fadeOut('fast', function(){
+      $('#tab2').fadeIn('slow');
+  });
     return false
   });
 
@@ -50,7 +53,7 @@ $(document).ready(function () {
 anime({
 targets: '.loop-alternate-infinity',
 translateX: function() {
-    return anime.random(-40, 60);
+    return anime.random(-60, 60);
   },
 translateY: function() {
     return anime.random(-60, 40);

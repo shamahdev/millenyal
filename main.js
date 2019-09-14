@@ -110,25 +110,53 @@ anime({
 var roundLogEl = document.querySelector('.round-log');
 var roundLogE2 = document.querySelector('.round-log2');
 var roundLogE3 = document.querySelector('.round-log3');
+$("#2014").click(function() { 
 
-anime({
-  targets: roundLogEl,
-  innerHTML: [0, 74],
-  easing: 'linear',
-  round: 1 // Will round the animated value to 1 decimal
-});
-anime({
-  targets: roundLogE2,
-  innerHTML: [0, 33],
-  easing: 'linear',
-  round: 1 // Will round the animated value to 1 decimal
-});
-anime({
-  targets: roundLogE3,
-  innerHTML: [0, 10],
-  easing: 'linear',
-  round: 1 // Will round the animated value to 1 decimal
-});
+  $('#2014').addClass( "active2" );
+  $('#2018').removeClass("active2");
+  anime({
+    targets: roundLogEl,
+    innerHTML: [74, 60],
+    easing: 'linear',
+    round: 1 // Will round the animated value to 1 decimal
+  });
+  anime({
+    targets: roundLogE2,
+    innerHTML: [33, 24],
+    easing: 'linear',
+    round: 1 // Will round the animated value to 1 decimal
+  });
+  anime({
+    targets: roundLogE3,
+    innerHTML: [10, 4.4],
+    easing: 'linear',
+    round: 1 // Will round the animated value to 1 decimal
+  });
+}); 
+$("#2018").click(function() { 
+  
+  $('#2018').addClass( "active2" );
+  $('#2014').removeClass("active2");
+  anime({
+    targets: roundLogEl,
+    innerHTML: [60, 74],
+    easing: 'linear',
+    round: 1 // Will round the animated value to 1 decimal
+  });
+  anime({
+    targets: roundLogE2,
+    innerHTML: [24, 33],
+    easing: 'linear',
+    round: 1 // Will round the animated value to 1 decimal
+  });
+  anime({
+    targets: roundLogE3,
+    innerHTML: [4, 10],
+    easing: 'linear',
+    round: 1 // Will round the animated value to 1 decimal
+  });
+}); 
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -150,3 +178,27 @@ for (i = 0; i < slides.length; i++) {
 }
 slides[slideIndex-1].style.display = "block";  
 }
+//Fade out
+$(document).ready(function() {
+    
+  /* Every time the window is scrolled ... */
+  $(window).scroll( function(){
+  
+      /* Check the location of each desired element */
+      $('.hideme').each( function(i){
+          
+          var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          
+          /* If the object is completely visible in the window, fade it it */
+          if( bottom_of_window > bottom_of_object ){
+              
+              $(this).animate({'opacity':'1'},500);
+                  
+          }
+          
+      }); 
+  
+  });
+  
+});

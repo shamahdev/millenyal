@@ -215,6 +215,10 @@ text-align: center !important;
 .active, .dot2:hover {
   background-color: #4174ff;
 }
+.active2, .yearslider:hover{
+  color:white;
+  text-decoration-line: underline;
+}
 
 /* Fading animation */
 
@@ -395,6 +399,11 @@ margin-top: 10rem;
   width: 20%;
   left: 80%
 }
+.jar3{
+  position: absolute;
+  width: 70%;
+  right: 55%
+}
 
 .circle {
   height: 100px;
@@ -407,4 +416,11 @@ margin-top: 10rem;
 
 .secondaryfont i{
   font-style: normal;
+}
+.hideme
+{
+    opacity:0;
+}
+.yearslider{
+  font-size: 28px; margin-top: 55px; position: absolute; cursor: pointer;;
 }

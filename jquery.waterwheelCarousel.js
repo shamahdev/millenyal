@@ -566,6 +566,15 @@
         } else if (direction == 'forward') {
           options.movingToCenter(nextItemFromCenter());
           data.currentDirection = 'forward';
+        }else if (direction == 'num1') {
+          options.movingToCenter(1);
+          data.currentDirection = 'num1';
+        }else if (direction == 'num1') {
+          options.movingToCenter(2);
+          data.currentDirection = 'num2';
+        }else if (direction == 'num3') {
+          options.movingToCenter(3);
+          data.currentDirection = 'num3';
         }
       }
 
@@ -633,6 +642,24 @@
       options.autoPlay = 0;
 
       moveOnce('backward');
+    }
+    this.get1 = function() {
+      autoPlay(true);
+      options.autoPlay = 0;
+
+      moveOnce('num1');
+    }
+    this.get2 = function () {
+      autoPlay(true);
+      options.autoPlay = 0;
+
+      moveOnce('num2');
+    }
+    this.get3 = function () {
+      autoPlay(true);
+      options.autoPlay = 0;
+
+      moveOnce('num3');
     }
 
     this.reload(startingOptions);

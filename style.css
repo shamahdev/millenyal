@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'gilroyextrabold';
-  src: url('gilroy-extrabold-webfont.woff2') format('woff2'),
+  src: url('gilroy-extrabold-webfont.ttf') format('woff2'),
        url('gilroy-extrabold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
@@ -344,8 +344,29 @@ margin-top: 180px;
   text-align: center;
 }
 
-#textbox i{
+.tab i{
 font-style: normal;
+}
+
+.tab p{
+text-align: justify !important;
+font-size: 20px;
+}
+
+.tab2{
+  padding: 0 20rem;
+  text-align: center;
+}
+
+.tab2 p{
+text-align: center !important;
+font-size: 24px;
+margin: 0;
+}
+
+.tab2 h1{
+  font-size: 2.5rem;
+  margin-bottom: 0;
 }
 
 .video-mask{
@@ -362,7 +383,12 @@ font-style: normal;
 
 .grad{
   height: 30rem;
-background: linear-gradient(90deg, #005B97 24%, #00A5F4 79%);
+background: linear-gradient(90deg, #005B97 0%, #00A5F4 100%);
+}
+.grad2{
+z-index: -1;
+height: 150vh;
+background: linear-gradient(90deg, #005B97 0%, #00A5F4 100%);
 }
 
 .p{
@@ -376,7 +402,7 @@ background: linear-gradient(90deg, #005B97 24%, #00A5F4 79%);
   text-align: left !important;
 }
 .p .secondaryfont{
-  font-size: 4rem;
+  font-size: 4.5rem;
   text-align: center;
 }
 .p .secondaryfont p{
@@ -417,10 +443,58 @@ margin-top: 10rem;
 .secondaryfont i{
   font-style: normal;
 }
-.hideme
+/* .hideme
 {
     opacity:0;
-}
+} */
 .yearslider{
-  font-size: 28px; margin-top: 55px; position: absolute; cursor: pointer;;
+  font-size: 28px; ; position: absolute; cursor: pointer; 
+}
+
+.againts{
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: right;
+  margin-right: 8rem;
+  margin-top: 8rem;
+  padding-bottom: 2rem;
+}
+.againts p{
+  margin: 10px;
+}
+
+.alert{
+  padding: 0 28rem;
+  text-align: center;
+  display: inline-block
+}
+
+.alert .primaryfont{
+  font-size: 3rem;
+}
+.alert p{
+  text-align: justify !important;
+  font-size: 1.5rem;
+}
+
+.bgsection{
+  z-index: -5;
+  position: absolute;
+  margin-top: 8rem;
+  width: 30%;
+}
+.slidedown{
+  cursor: pointer;
+  padding-top: 3rem;
+  width: 15%;
+  transition: 0.6s;
+}
+.slidedown:hover{
+  transition: 0.6s;
+  padding-top: 5rem;
+}
+
+.foot{
+  height: 26rem;
+  max-width: 100%;
 }

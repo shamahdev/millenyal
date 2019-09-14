@@ -1,4 +1,4 @@
 # WebHiedescum
 Lomba Hiedescum 2019
 
-Burulah lanjutkeun wkwkwk
+Sekitar 3-4 Section lagi bozz

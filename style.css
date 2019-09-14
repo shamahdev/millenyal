@@ -14,6 +14,14 @@ html{
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+@font-face {
+  font-family: 'gilroy-extrabold';
+  src: url("gilroy-extrabold.otf") format("opentype");
+}
+@font-face {
+  font-family: 'gilroy-light';
+  src: url("gilroy-light.otf") format("opentype");
+}
 section{
   height: 100%;
 }
@@ -214,20 +222,6 @@ text-align: center !important;
   from {opacity: .4} 
   to {opacity: 1}
 }
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
-@font-face {
-  font-family: 'gilroy-extrabold';
-  src: url("gilroy-extrabold.otf") format("opentype");
-}
-@font-face {
-  font-family: 'gilroy-light';
-  src: url("gilroy-light.otf") format("opentype");
-}
 .arrow{
   width: 90%;
   padding-left: 5rem;
@@ -279,11 +273,11 @@ a {
 }
 
 .primaryfont{
-  font-family: gilroy-extrabold;
+  font-family: 'gilroy-extrabold';
 }
 
 .secondaryfont{
-  font-family: gilroy-light;
+  font-family: 'gilroy-light';
   font-size: 20px;
 }
 

@@ -1,4 +1,5 @@
 # WebHiedescom
 Lomba Hiedescom 2019
 
-Ga banyak, urg rek indit heula ah
+All section beres
+Tinggal masukin yang belum sama interaksinya ada yg belum ada, cya

@@ -172,6 +172,7 @@ text-align: center !important;
 
 /* The dots/bullets/indicators */
 .dot {
+  border-style: none;
   cursor: pointer;
   height: 8px;
   width: 85px;
@@ -192,6 +193,7 @@ text-align: center !important;
 
 /* The dots/bullets/indicators */
 .dot2 {
+  border-style: none;
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -443,10 +445,10 @@ margin-top: 10rem;
 .secondaryfont i{
   font-style: normal;
 }
-/* .hideme
-{
+
+.hideme{
     opacity:0;
-} */
+} 
 .yearslider{
   font-size: 28px; ; position: absolute; cursor: pointer; 
 }

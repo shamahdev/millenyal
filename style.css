@@ -445,6 +445,7 @@ margin-top: 10rem;
 .secondaryfont i{
   font-style: normal;
 }
+<<<<<<< HEAD
 
 .hideme{
     opacity:0;
@@ -499,4 +500,12 @@ margin-top: 10rem;
 .foot{
   height: 26rem;
   max-width: 100%;
+=======
+.hideme
+{
+    opacity:0;
+}
+.yearslider{
+  font-size: 28px; margin-top: 55px; position: absolute; cursor: pointer;;
+>>>>>>> 879d9b3ccf62a5206fa1f8e980b72b35c47f53e1
 }

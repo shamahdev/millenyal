@@ -201,6 +201,7 @@ slides[slideIndex-1].style.display = "block";
 //Fade out
 $(document).ready(function() {
     
+<<<<<<< HEAD
     // /* Every time the window is scrolled ... */
     $(window).scroll( function(){
     
@@ -269,4 +270,26 @@ easing : "easeOutExpo"
       ]
 
   })
+=======
+  /* Every time the window is scrolled ... */
+  $(window).scroll( function(){
+  
+      /* Check the location of each desired element */
+      $('.hideme').each( function(i){
+          
+          var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          
+          /* If the object is completely visible in the window, fade it it */
+          if( bottom_of_window > bottom_of_object ){
+              
+              $(this).animate({'opacity':'1'},500);
+                  
+          }
+          
+      }); 
+  
+  });
+  
+>>>>>>> 879d9b3ccf62a5206fa1f8e980b72b35c47f53e1
 });

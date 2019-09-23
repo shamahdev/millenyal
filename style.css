@@ -2,7 +2,6 @@
   font-family: 'gilroyextrabold';
   src: url('gilroy-extrabold-webfont.ttf') format('woff2'),
        url('gilroy-extrabold-webfont.woff') format('woff');
-  font-weight: normal;
   font-style: normal;
 }
 @font-face {
@@ -456,8 +455,15 @@ background-size: cover;
   margin-right: 8rem;
   padding-top: 4rem;
 }
+.againts2{
+  margin: 0;
+  text-align: left;
+  margin-left: 8rem;
+  padding-top: 4rem;
+}
 .againts p{
-  margin: 10px;
+  margin: 0px;
+  font-weight: 
 }
 
 .alert{
@@ -518,6 +524,9 @@ font-family: 'gilroylight';
 font-size: 16px;
 font-weight: 600;
 color: black;
+}
+.jt{
+  text-align: justify!important;
 }
 
 .btn:hover{

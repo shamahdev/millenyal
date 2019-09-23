@@ -19,7 +19,6 @@ $(document).ready(function () {
     $('#profile1').addClass( "active" );
     $('#profile2').removeClass("active");
     $('#profile3').removeClass("active");
-
     $('#textbox').fadeOut('fast', function(){
       carousel.prev();
       $('#textbox').fadeIn('fast');
@@ -221,3 +220,43 @@ $(document).ready(function() {
     // });
     
 });
+const kedua=
+"M1366,800c0,0-103.9,9.5-246.7-38C852,673,610,581,330,581C106,581,0,690,0,690V-32h1366V800z";
+const pertama=
+"M1366,713c0,0-90.2-110-386.6-110C801.8,603,469,723,212.6,791.6C61.7,832.1,0,821,0,821V0h1366V713z";
+
+const coba = document.querySelector('#tes');
+const coba1=document.querySelector('#tes2');
+let toggle = false;
+
+coba.addEventListener('click', () =>{
+  
+    const timeline = anime.timeline({
+duration:2000,
+easing : "easeOutExpo"
+
+    });
+    timeline.add({
+        targets:".pertama",
+      
+        d: [
+            {value:kedua}
+        ]
+ 
+    })
+});
+coba1.addEventListener('click', () =>{
+  const timeline = anime.timeline({
+duration:2000,
+easing : "easeOutExpo"
+
+  });
+  timeline.add({
+      targets:".pertama",
+    
+      d: [
+          {value:pertama}
+      ]
+
+  })
+})

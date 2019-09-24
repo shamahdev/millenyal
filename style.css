@@ -13,6 +13,7 @@
 }
 * {box-sizing: border-box}
 body {
+  overflow: auto;
   margin: 0;
 }
 img {
@@ -51,11 +52,11 @@ section {
 }
 .next:hover{
   transition: 0.5s ease;
-  padding-right: 4rem;
+  padding-right: 2rem;
 }
 .prev, .next {
   transition: 0.5s ease;
-  padding-left: 4rem;
+  padding-left: 5rem;
   cursor: pointer;
   position: absolute;
   top: 45%;
@@ -65,10 +66,16 @@ section {
   user-select: none;
 }
 
+.pic{
+  width: 87%;
+  padding: 3rem 0rem 3rem 8rem;
+  padding-top: 10rem;
+}
+
 /* Position the "next button" to the right */
 .next {
   padding-left: 0rem;
-  padding-right: 2rem;
+  padding-right: 3rem;
   right: 0;
 }
 .kolom {
@@ -111,6 +118,11 @@ section {
     -ms-flex: 0 0 58.333333%;
         flex: 0 0 58.333333%;
     max-width: 58.333333%;
+  }
+  .kolom73{
+    -ms-flex: 0 0 55.333333%;
+        flex: 0 0 55.333333%;
+    max-width: 55.333333%;
   }
   .kolom8{
     -ms-flex: 0 0 66.666667%;
@@ -161,7 +173,7 @@ text-align: center !important;
 }
 
 .badge{
-  margin-left: 4rem;
+  margin-left: 90px;
   font-size: 30px !important;
 }
 
@@ -245,7 +257,7 @@ text-align: center !important;
 }
 
 .nav{
-  margin: 25px;
+  margin: 0 16px;
   color: white;
 }
 
@@ -285,12 +297,14 @@ a {
 
 .primaryfont{
   font-family: 'gilroyextrabold';
-  font-size: 3rem;
+  letter-spacing: -1;
+  font-size: 40px;
+  font-weight: black;
 }
 
 .secondaryfont{
   font-family: 'gilroylight';
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -301,17 +315,16 @@ a {
 
 .slider{
   position: absolute;
-  margin-left: 42rem;
+  margin-left: 47rem;
   padding-top: 34rem;
   z-index: 20;
 }
 .content .primaryfont{
-margin-top: 180px;
+margin-top: 160px;
 }
 
 .content .secondaryfont{
-  font-size: 20px;
-  padding-right: 12rem;
+  padding-right: 14rem;
   text-align: justify;
 }
 /*tes*/

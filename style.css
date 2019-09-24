@@ -2,7 +2,6 @@
   font-family: 'gilroyextrabold';
   src: url('gilroy-extrabold-webfont.ttf') format('woff2'),
        url('gilroy-extrabold-webfont.woff') format('woff');
-  font-weight: normal;
   font-style: normal;
 }
 @font-face {
@@ -172,6 +171,7 @@ text-align: center !important;
 
 /* The dots/bullets/indicators */
 .dot {
+  border-style: none;
   cursor: pointer;
   height: 8px;
   width: 85px;
@@ -192,6 +192,7 @@ text-align: center !important;
 
 /* The dots/bullets/indicators */
 .dot2 {
+  border-style: none;
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -410,8 +411,7 @@ background-size: cover;
   font-size: 20px;
 }
 
-.jar1, .jar2{
-}
+
 
 .jar1{
   position: absolute;
@@ -442,10 +442,10 @@ background-size: cover;
 .secondaryfont i{
   font-style: normal;
 }
-/* .hideme
-{
+
+/* .hideme{
     opacity:0;
-} */
+}  */
 .yearslider{
   font-size: 28px; ; position: absolute; cursor: pointer; 
 }
@@ -456,8 +456,15 @@ background-size: cover;
   margin-right: 8rem;
   padding-top: 4rem;
 }
+.againts2{
+  margin: 0;
+  text-align: left;
+  margin-left: 8rem;
+  padding-top: 4rem;
+}
 .againts p{
-  margin: 10px;
+  margin: 0px;
+  
 }
 
 .alert{
@@ -519,8 +526,15 @@ font-size: 16px;
 font-weight: 600;
 color: black;
 }
+.jt{
+  text-align: justify!important;
+}
 
 .btn:hover{
   transition: 0.3s ease;
   border-radius: 0px;
+}
+.yearslider{
+  font-size: 28px; margin-top: 55px; position: absolute; cursor: pointer;;
+
 }

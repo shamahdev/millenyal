@@ -17,9 +17,9 @@ $(document).ready(function () {
   $('#profile1').bind('click', function () {
 
     $('#profile1').addClass( "active" );
+
     $('#profile2').removeClass("active");
     $('#profile3').removeClass("active");
-
     $('#textbox').fadeOut('fast', function(){
       carousel.prev();
       $('#textbox').fadeIn('fast');
@@ -201,23 +201,129 @@ slides[slideIndex-1].style.display = "block";
 $(document).ready(function() {
     
     // /* Every time the window is scrolled ... */
-    // $(window).scroll( function(){
+    $(window).scroll( function(){
     
-    //     /* Check the location of each desired element */
-    //     $('.hideme').each( function(i){
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
             
-    //         var bottom_of_object = $(this).position().top + $(this).outerHeight();
-    //         var bottom_of_window = $(window).scrollTop() + $(window).height();
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+         var bottom_of_window = $(window).scrollTop() + $(window).height();
             
-    //         /* If the object is completely visible in the window, fade it it */
-    //         if( bottom_of_window > bottom_of_object ){
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
                 
-    //             $(this).animate({'opacity':'1'},1000);
+              $(this).animate({'opacity':'1'},1000);
                     
-    //         }
+            }
             
-    //     }); 
+       }); 
     
-    // });
+     });
     
 });
+//Svg Morph
+const kedua=
+"M1366,800c0,0-103.9,9.5-246.7-38C852,673,610,581,330,581C106,581,0,690,0,690V-32h1366V800z";
+const pertama=
+"M1366,713c0,0-90.2-110-386.6-110C801.8,603,469,723,212.6,791.6C61.7,832.1,0,821,0,821V0h1366V713z";
+
+
+const coba = document.querySelector('#tes');
+const coba1=document.querySelector('#tes2');
+let toggle = false;
+
+coba.addEventListener('click', () =>{
+  
+    const timeline = anime.timeline({
+duration:2000,
+easing : "easeOutExpo"
+
+    });
+    timeline.add({
+        targets:".pertama",
+      
+        d: [
+            {value:kedua}
+        ]
+ 
+    })
+   add({
+      targets:".gradi",
+    
+      stop: [ ["30", "rgba(68,195,255,1)"], ["40", "rgba(34,68,171,1)"] ]
+
+  })
+});
+coba1.addEventListener('click', () =>{
+  const timeline = anime.timeline({
+duration:2000,
+easing : "easeOutExpo"
+
+  });
+  timeline.add({
+      targets:".pertama",
+    
+});
+const kedua=
+"M1366,800c0,0-103.9,9.5-246.7-38C852,673,610,581,330,581C106,581,0,690,0,690V-32h1366V800z";
+const pertama=
+"M1366,713c0,0-90.2-110-386.6-110C801.8,603,469,723,212.6,791.6C61.7,832.1,0,821,0,821V0h1366V713z";
+
+const coba = document.querySelector('#tes');
+const coba1=document.querySelector('#tes2');
+let toggle = false;
+
+coba.addEventListener('click', () =>{
+  
+    const timeline = anime.timeline({
+duration:2000,
+easing : "easeOutExpo"
+
+    });
+    timeline.add({
+        targets:".pertama",
+      
+        d: [
+            {value:kedua}
+        ]
+ 
+    })
+});
+coba1.addEventListener('click', () =>{
+  const timeline = anime.timeline({
+duration:2000,
+easing : "easeOutExpo"
+
+  });
+  timeline.add({
+      targets:".pertama",
+    
+
+      d: [
+          {value:pertama}
+      ]
+
+  })
+
+  /* Every time the window is scrolled ... */
+  $(window).scroll( function(){
+  
+      /* Check the location of each desired element */
+      $('.hideme').each( function(i){
+          
+          var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          
+          /* If the object is completely visible in the window, fade it it */
+          if( bottom_of_window > bottom_of_object ){
+              
+              $(this).animate({'opacity':'1'},500);
+                  
+          }
+          
+      }); 
+  
+  });
+  
+});
+})

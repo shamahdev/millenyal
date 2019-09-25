@@ -41,10 +41,13 @@ src: local('Gilroy-Regular'), url('Gilroy-Regular.woff') format('woff');
 
 * {box-sizing: border-box}
 body {
+  font-family: 'Gilroy-medium';
   overflow: auto;
+  overflow-x: hidden;
   margin: 0;
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 img {
   vertical-align: middle;
@@ -60,7 +63,8 @@ html{
 }
 section {
   display: block;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
 }
 /* Slideshow container */
 .slideshow-container {
@@ -232,17 +236,12 @@ text-align: center !important;
   transition: 0.6s ease;
   width: 100px;
 }
-
-.active, .dot:hover {
-  background-color: #4ab8c7;
-}
-
 /* The dots/bullets/indicators */
 .dot2 {
   border-style: none;
   cursor: pointer;
-  height: 16px;
-  width: 16px;
+  height: 14px;
+  width: 14px;
   margin: 0 2px;
   background-color: rgb(120, 120, 120);
   border-radius: 100%;
@@ -252,16 +251,49 @@ text-align: center !important;
 }
 .dot2:hover{
   transition: 0.3s ease;
+  width: 14;
+  height: 14;
+}
+.dot3 {
+  border-style: none;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 2px;
+  background-color: rgb(190, 190, 190);
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  transition: 0.3s ease;
+}
+.dot3:hover{
+  transition: 0.3s ease;
   width: 16;
   height: 16;
 }
+.dot3 p{
+  margin-left: -3px;
+  font-size: 12px;
+  padding-top: 10px;
+  text-align: center;
+}
+.dot4 {
+  border-style: none;
+  cursor: pointer;
+  height: 2.5px;
+  width: 28px;
+  background-color: rgb(190, 190, 190);
+  display: inline-block;
+  vertical-align: middle;
+  transition: 0.3s ease;
+}
 #indicator .active{
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
 
-.active, .dot2:hover {
-  background-color: #4ab8c7;
+.active, .dot2:hover, .dot:hover{
+  background-color: #0089D1;
 }
 .active2, .yearslider:hover{
   color:white;
@@ -347,10 +379,29 @@ a {
 
 .secondaryfont{
   font-family: 'gilroy-light';
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
 }
+.normalfont{
+  font-family: 'Gilroy-Medium';
+  font-size: 40px;
+  font-weight: 900;
+}
 
+.percentage{
+  font-size: 56px;
+  font-weight: 200 !important;
+} 
+.percentage div{
+  margin-right: 2.5rem;
+}
+.percentage div p{
+  margin: 0;
+  margin-left: -5px;
+  margin-top: -5px;
+  font-size: 18px;
+  text-align: center;
+}
 .wrapper{
   text-align:center;
   height:100%;
@@ -406,7 +457,7 @@ font-style: normal;
 }
 
 .tab p{
-text-align: justify !important;
+text-align: center !important;
 font-size: 18px;
 }
 
@@ -590,6 +641,9 @@ color: black;
   margin-top: 30px;
   padding-left: 8rem;
   padding-right:30rem;
+}
+.jt2{
+  padding-left: 7.5rem;
 }
 
 .btn:hover{

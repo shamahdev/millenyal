@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <script type="text/javascript" src="jquery-3.4.1.js"></script>
   <script type="text/javascript" src="jquery.waterwheelCarousel.js"></script>
+  <script type="text/javascript" src="jquery.modal.js"></script>
   <script src="anime.min.js"></script>
   <script type="text/javascript" src="core.js"></script>
 </head>
@@ -20,17 +21,17 @@
 
 <nav class="secondaryfont" style="font-size: 18px; font-weight: normal; position: absolute; margin-top: 1.8rem;">
 	<a href="" class="primaryfont white badge">Millenyal.</a>
-  <a href="#home" class="nav" style="margin-left: 41rem">Tentang</a> 
-  <a href="#profile" class="nav">Para Ahli</a> 
-  <a href="#video" class="nav">Video</a> 
-  <a href="#againts" class="nav">Againts 4.0</a>
+  <a href="#" class="nav" style="margin-left: 45rem">Home</a> 
+  <a href="#about" class="nav">About</a> 
+  <a href="#revolution" class="nav">Revolution</a> 
+  <a href="#jobs" class="nav">Jobs</a>
 </nav>
 
 <!-- 1 -->
 <div class="mySlides fade">
   	<img class="particle loop-alternate-infinity" src="img/particle.png">
   	<p class="title primaryfont white">Millenials</p>
-  	<img src="img/man.png" style="width: 15%; position: absolute; margin-left: 35rem; margin-top: 8.3rem;">
+  	<img src="img/man.png" class="centersolute" style="width: 15%; margin-top: 8.3rem;">
   
 </div>
 
@@ -38,7 +39,7 @@
   <div class="mySlides fade">
       <img class="particle loop-alternate-infinity" src="img/particle.png">
   	<p class="title primaryfont white">Millennial</p>
-  	<img src="img/man2.png" style="width: 11%; position: absolute; margin-left: 38rem; margin-top: 8rem;">
+  	<img src="img/man2.png" class="centersolute" style="width: 11%; margin-top: 8rem;">
   
   </div>
 
@@ -74,7 +75,7 @@
 
 
 </section>
-<section id="home" class="hideme">
+<section id="about" class="hideme">
 
     <!-- div1 -->
     <div class="kolom" id="div1">
@@ -112,11 +113,11 @@
 <section id="profile" class="hideme" style="height: 100vh">
     <div class="profile">
         <h1 class="primaryfont">Pendapat Ahli</h1>
-        <div class="kolom12" id="carousel">
-          <img src="img/profile.jpeg" data-title="Engkus Kusnadi" data-number=1 data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eos assumenda in molestiae eligendi labore quos voluptatum dolores voluptas quibusdam, doloremque id quod sequi cum inventore? Neque impedit porro ab." id="item-1" class="round"/>
-          <img src="img/profile.jpeg" data-title="Dede Ropandhi" data-number=2 data-content="Caption 2" id="item-2" class="round" />
-          <img src="img/profile.jpeg" data-title="Sendi Junaedi" data-number=3 data-content="Caption 3" id="item-3" class="round" />
-        </div>
+          <div class="kolom12" id="carousel">
+            <img src="img/profile.jpeg" data-title="Engkus Kusnadi" data-number=1 data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eos assumenda in molestiae eligendi labore quos voluptatum dolores voluptas quibusdam, doloremque id quod sequi cum inventore? Neque impedit porro ab." id="item-1" class="round"/>
+            <img src="img/profile.jpeg" data-title="Dede Ropandhi" data-number=2 data-content="Caption 2" id="item-2" class="round" />
+            <img src="img/profile.jpeg" data-title="Sendi Junaedi" data-number=3 data-content="Caption 3" id="item-3" class="round" />
+          </div>
       <div id="indicator">
         <button class="dot2 active" id="profile1"></button>
         <button class="dot2" id="profile2"></button>
@@ -128,8 +129,8 @@
     <p><i>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eos assumenda in molestiae eligendi labore quos voluptatum dolores voluptas quibusdam, doloremque id quod sequi cum inventore? Neque impedit porro ab."</i></p>
   </div>
 </section>
-<section id="video" style="height: auto">
-  <img src="img/Asset 13.png" style="width: 75%; position: absolute; z-index: -10; right:-200; ">
+<section id="revolution">
+  <img src="img/Asset 13.png" style="width: 75%; position: absolute; z-index: -10; right:-250; margin-top: -15rem">
     <div class="kolom">
       <div class="kolom8">
         <div class="primaryfont againts title2">
@@ -140,34 +141,42 @@
         <p class="secondaryfont jt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a risus rhoncus, rutrum dolor quis, fringilla turpis. Pellentesque non auctor Nullam elementum aliquet nisl eget consequat. Praesent id lorem quis metus facilisis lobortis. Pellentesque non auctor Nullam elementum aliquet nisl eget consequat. Praesent id lorem quis metus facilisis lobortis.</p>
       <p class="normalfont" style="text-align:left; font-size: 18px;letter-spacing: 0;padding-left: 7.5rem; padding-top: 5px">Persentase pengangguran<br>di Indonesia :</p>  
       <div class="kolom secondaryfont jt2 percentage">
-        <div class="round-log">74%<p>SMA</p></div>
-        <div class="round-log2">33%<p>SMK</p></div>
-        <div class="round-log3">10%<p>Sarjana</p></div>
+        <div><span class="round-log">74</span>%<p>SMA</p></div>
+        <div><span class="round-log2">33</span>%<p>SMK</p></div>
+        <div><span class="round-log3">10</span>%<p>Sarjana</p></div>
       </div>    
-      <div class="dot3 active" style="margin-left: 8rem; margin-top: 15px"><p>2014</p></div>
-      <div class="dot4 active" style="margin-top: 15px"></div><div class="dot4" style="margin-top: 15px"></div>
-      <div class="dot3" style="margin-top: 15px"><p>2018</p></div>
+      <div id="2014"class="dot3 active" style="margin-left: 8rem; margin-top: 15px"><p>2014</p></div>
+      <div id="2014line"class="dot4 active" style="margin-top: 15px"></div><div id="2018line"class="dot4" style="margin-top: 15px"></div>
+      <div id="2018"class="dot3" style="margin-top: 15px"><p>2018</p></div>
       </div>
-          <img src="img/robot.png" style="width: 54%; right: -30; padding-top: 8rem;position: absolute; overflow: hidden !important;"> 
-          <img src="img/man1.png" style="width: 25%; position: absolute; margin-top: 79.7rem; margin-left:105px; z-index: 3;">
-          <img src="img/hiclipart.com-id_mutwh.png" style="width: 25%; position:absolute; margin-top:75rem; margin-left: 840px;">
+          <img src="img/robot.png" style="width: 54%; right: -30; padding-top: 8rem;position: absolute; z-index: -5;"> 
+          <img src="img/man1.png" style="width: 29%;position: absolute; margin-top: 77.8rem; margin-left:60px; z-index: 3;">
+          <a href="#ex1" rel="modal:open" class="video"><img src="img/hiclipart.com-id_mutwh.png"></a>
         </div>
-<img src="img/bgg.png" style="max-width: 100%; z-index:2;">
+<img src="img/bgg.png" style="max-width: 100%; z-index:4;">
+<!-- play vid -->
+<div id="ex1" class="modal">
+    <iframe width="960" height="540"src="https://www.youtube.com/embed/D_v8oX5s51g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+ <!-- end -->
 </section>    
 </section>
-<section id="againts"style="height:49rem;  background-color:black;">
+<section id="againts"style="background-color: black; z-index:5">
 <div class="kolom">
 
-<div class="kolom6">
+<div class="kolom73">
   <div class="primaryfont againts2" style="color: white; font-size: 48pt;">
-    <p style="margin:0;">SIAPKAN </p>
-    <p style="margin:0;">DIRIMU</p>
-
-<p class="secondaryfont " style="margin-left: 100px; color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a risus rhoncus, rutrum dolor quis, fringilla turpis. Pellentesque non auctor  Nullam elementum aliquet nisl eget consequat. Praesent id lorem quis metus facilisis lobortis. Pellentesque nisi enim, ullamcorper ac rhoncus eget, interdum sed mauris. Maecenas eu nisl sed ex maximus varius ac in mi. Maecenas a suscipit dui. Nullam pellentesque interdum est ullamcorper aliquam. Vestibulum feugiat ornare neque, et rutrum </p>
-<p class="primaryfont" style="color: white; font-size: 28pt; margin-left: 100px;">Rekomendasi Pekerjaan untuk Kaum Millenial</p>
+    <p class="m-0">SIAPKAN</p>
+    <p class="m-0">DIRIMU</p>
+    <p class="secondaryfont"  style="font-size: 20px; font-weight: normal; margin-right: 7rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a risus rhoncus, rutrum dolor quis, fringilla turpis. Pellentesque non auctor  Nullam elementum aliquet nisl eget consequat. Praesent id lorem quis metus facilisis lobortis. Pellentesque nisi enim, ullamcorper ac rhoncus eget, interdum sed mauris. Maecenas eu nisl sed ex maximus varius ac in mi. Maecenas a suscipit dui. Nullam pellentesque interdum est ullamcorper aliquam. Vestibulum feugiat ornare neque, et rutrum </p>
+    <p class="title3" style="font-size: 26pt; font-weight: 900;">Rekomendasi Pekerjaan untuk Kaum Millenial</p>
+    <a href="#jobs"><img src="img/downarrow2.png" class="arrow"></a>
+    
+</div>
+<div class="kolom5">
 </div>
 </section>
-<section id="bisnis" style="height:150vh">
+<section id="jobs">
     <div class="grad2">
     <div class="kolom">
         <div class="kolom6">
@@ -181,8 +190,8 @@
     </div>
 </section>
 <section id="footer">
-    <div class="profile">
-        <p class="secondaryfont" style="font-size: 3.5rem; padding-top: 5rem;">Our Team</p>
+    <div class="profile" style="padding-top: 200px">
+        <p class="secondaryfont" style="font-size: 3rem;">Our Team</p>
         <div id="indicator">
         <span class="dot2 active" id="profile1"></span>
         <span class="dot2" id="profile2"></span>
@@ -193,6 +202,8 @@
           <p>Programmer/Coder</p>
         </div>
   </div>
+  
+  <div class="secondaryfont" style="position: absolute; font-size:24px; margin-top:9.5rem; margin-left: 3.5rem;">@Hiedescom 2019</div>
   <img class="foot" src="img/bg_footer.png">
 </section>
 

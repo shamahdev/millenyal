@@ -1,20 +1,50 @@
+/* FONT */
 @font-face {
-  font-family: 'gilroyextrabold';
-  src: url('gilroy-extrabold-webfont.ttf') format('woff2'),
-       url('gilroy-extrabold-webfont.woff') format('woff');
-  font-style: normal;
+font-family: 'Gilroy-Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Gilroy-Bold'), url('Gilroy-Bold.woff') format('woff');
 }
+
+
 @font-face {
-  font-family: 'gilroylight';
-  src: url('gilroy-light-webfont.woff2') format('woff2'),
-       url('gilroy-light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+font-family: 'Gilroy-Heavy';
+font-style: normal;
+font-weight: normal;
+src: local('Gilroy-Heavy'), url('Gilroy-Heavy.woff') format('woff');
 }
+
+
+@font-face {
+font-family: 'Gilroy-Light';
+font-style: normal;
+font-weight: normal;
+src: local('Gilroy-Light'), url('Gilroy-Light.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Gilroy-Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Gilroy-Medium'), url('Gilroy-Medium.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Gilroy-Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Gilroy-Regular'), url('Gilroy-Regular.woff') format('woff');
+}
+/* FONT END  */
+
 * {box-sizing: border-box}
 body {
   overflow: auto;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 img {
   vertical-align: middle;
@@ -30,7 +60,7 @@ html{
 }
 section {
   display: block;
-  width: 100%;
+  height: 100vh;
 }
 /* Slideshow container */
 .slideshow-container {
@@ -70,6 +100,11 @@ section {
   width: 87%;
   padding: 3rem 0rem 3rem 8rem;
   padding-top: 10rem;
+}
+.pic2{
+  width: 87%;
+  padding: 6rem 0rem 3rem 6rem;
+  padding-top: 14rem;
 }
 
 /* Position the "next button" to the right */
@@ -174,7 +209,7 @@ text-align: center !important;
 
 .badge{
   margin-left: 90px;
-  font-size: 30px !important;
+  font-size: 34px !important;
 }
 
 .disable{
@@ -186,9 +221,9 @@ text-align: center !important;
   border-style: none;
   cursor: pointer;
   height: 8px;
-  width: 85px;
+  width: 90px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: rgb(120, 120, 120);
   border-radius: 35px;
   display: inline-block;
   transition: 0.6s ease;
@@ -199,17 +234,17 @@ text-align: center !important;
 }
 
 .active, .dot:hover {
-  background-color: #4174ff;
+  background-color: #4ab8c7;
 }
 
 /* The dots/bullets/indicators */
 .dot2 {
   border-style: none;
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 16px;
+  width: 16px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: rgb(120, 120, 120);
   border-radius: 100%;
   display: inline-block;
   vertical-align: middle;
@@ -217,8 +252,8 @@ text-align: center !important;
 }
 .dot2:hover{
   transition: 0.3s ease;
-  width: 20px;
-  height: 20px;
+  width: 16;
+  height: 16;
 }
 #indicator .active{
   width: 20px;
@@ -226,7 +261,7 @@ text-align: center !important;
 }
 
 .active, .dot2:hover {
-  background-color: #4174ff;
+  background-color: #4ab8c7;
 }
 .active2, .yearslider:hover{
   color:white;
@@ -257,7 +292,7 @@ text-align: center !important;
 }
 
 .nav{
-  margin: 0 16px;
+  margin: 0 12px;
   color: white;
 }
 
@@ -287,6 +322,15 @@ a {
   z-index: 10;
   text-shadow: 0.75rem 0.75rem black;
 }
+.title2{
+  margin-top: 2rem !important;
+}
+.title2 p{
+  text-align: left;
+  margin:0;
+  font-size: 40pt;
+  padding-left: 8rem;
+}
 
 .particle{
   width: 65%;
@@ -296,14 +340,13 @@ a {
 }
 
 .primaryfont{
-  font-family: 'gilroyextrabold';
+  font-family: 'Gilroy-Heavy';
+  font-size: 40px;  
   letter-spacing: -1;
-  font-size: 40px;
-  font-weight: black;
 }
 
 .secondaryfont{
-  font-family: 'gilroylight';
+  font-family: 'gilroy-light';
   font-size: 16px;
   font-weight: 600;
 }
@@ -315,7 +358,7 @@ a {
 
 .slider{
   position: absolute;
-  margin-left: 47rem;
+  margin-left: 46.5rem;
   padding-top: 34rem;
   z-index: 20;
 }
@@ -351,8 +394,11 @@ margin-top: 160px;
 }
 
 .tab{
-  padding: 0 30rem;
+  padding: 0 33rem;
   text-align: center;
+}
+.tab h2{
+  font-family: 'Gilroy-medium';
 }
 
 .tab i{
@@ -361,7 +407,7 @@ font-style: normal;
 
 .tab p{
 text-align: justify !important;
-font-size: 20px;
+font-size: 18px;
 }
 
 .tab2{
@@ -541,6 +587,9 @@ color: black;
 }
 .jt{
   text-align: justify!important;
+  margin-top: 30px;
+  padding-left: 8rem;
+  padding-right:30rem;
 }
 
 .btn:hover{

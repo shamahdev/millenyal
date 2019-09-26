@@ -368,3 +368,17 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+$(function () {
+  var $element = document.getElementById(".none");
+  function fadeInOut () {
+      $element.fadeIn(1000, function () {
+          $element.fadeOut(1500, function () {
+              $element.fadeIn(1500, function () {
+                  setTimeout(fadeInOut, 500);
+              });
+          });
+      });
+  }
+
+  fadeInOut();
+});

@@ -755,3 +755,11 @@ color: black;
 .animate-flicker {
     animation: fadeIn 12s infinite alternate;
 }
+.dotbisnis{
+  height: 35px;
+   width: 35px;
+   background-color: #1e88e5b2;
+    border-radius: 50% ;
+    display: inline-block; 
+    margin-left: 10px;
+}

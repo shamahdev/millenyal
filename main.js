@@ -382,3 +382,4 @@ $(function () {
 
   fadeInOut();
 });
+$('body').css('min-height', screen.height);

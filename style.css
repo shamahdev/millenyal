@@ -389,7 +389,7 @@ a {
   
 }
 .bisnis{
-  margin-left: 4rem !important;
+  margin-left: 1.9rem;
 }
 
 .particle{
@@ -460,6 +460,18 @@ margin-top: 160px;
   padding-top: 16rem;
 }
 #carousel img {
+  visibility:hidden; /* hide images until carousel can handle them */
+  cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+}
+#carousel2 {
+ margin-left: 280px;
+  width:800px;
+    height: 300px;
+    display: relative;
+    clear:both;
+    overflow:hidden;
+}
+#carousel2 img {
   visibility:hidden; /* hide images until carousel can handle them */
   cursor:pointer; /* otherwise it's not as obvious items can be clicked */
 }
@@ -665,6 +677,7 @@ background-size: cover;
 }
 
 .foot{
+
   bottom: 0;
   position:absolute;
   max-width: 100%;
@@ -758,4 +771,22 @@ color: black;
 
 .animate-flicker {
     animation: fadeIn 12s infinite alternate;
+}
+.dotbisnis{
+  height: 35px;
+   width: 35px;
+   background-color: #1e88e5b2;
+    border-radius: 50% ;
+    display: inline-block;
+     margin-left: 10px;
+      margin-top: 15px;
+}
+.circle{
+  background-color:#fff;
+  border:7px solid#1e88e5b2;    
+  height:65px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:65px;
 }

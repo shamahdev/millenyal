@@ -1,4 +1,5 @@
 // PROFILE SLIDER
+AOS.init();
 $(document).ready(function () {
   var carousel = $("#carousel").waterwheelCarousel({
   flankingItems: 3,
@@ -13,13 +14,23 @@ $(document).ready(function () {
   $('#textbox h2').append(name);
   }
   });
-//profile slider indicators
-  $('#profile1').bind('click', function () {
+  $(document).ready(function() {
+    $("#carousel2").waterwheelCarousel({
+      
+      horizon: 110,
+    horizonOffset: -50,
+    horizonOffsetMultiplier: .7,
+    separation: 150,
+    edgeFadeEnabled: true
+    });
+  });
+  //profile slider indicators
+  $('#profile4').bind('click', function () {
 
-    $('#profile1').addClass( "active" );
+    $('#profile4').addClass( "active" );
 
-    $('#profile2').removeClass("active");
-    $('#profile3').removeClass("active");
+    $('#profile5').removeClass("active");
+    $('#profile6').removeClass("active");
     $('#textbox').fadeOut('fast', function(){
       carousel.prev();
       $('#textbox').fadeIn('fast');
@@ -27,11 +38,11 @@ $(document).ready(function () {
     return false
   });
 
-  $('#profile2').bind('click', function () {
+  $('#profile5').bind('click', function () {
 
-    $('#profile2').addClass( "active" );
-    $('#profile1').removeClass("active");
-    $('#profile3').removeClass("active");
+    $('#profile5').addClass( "active" );
+    $('#profile4').removeClass("active");
+    $('#profile6').removeClass("active");
 
     $('#textbox').fadeOut('fast', function(){
       carousel.next();
@@ -40,11 +51,11 @@ $(document).ready(function () {
     return false
   });
 
-  $('#profile3').bind('click', function () {
+  $('#profile6').bind('click', function () {
 
-    $('#profile3').addClass( "active" );
-    $('#profile2').removeClass("active");
-    $('#profile1').removeClass("active");
+    $('#profile6').addClass( "active" );
+    $('#profile5').removeClass("active");
+    $('#profile4').removeClass("active");
 
     $('#textbox').fadeOut('fast', function(){
       carousel.next();
@@ -227,9 +238,9 @@ $(document).ready(function() {
 });
 //Svg Morph
 const kedua=
-"M1366,800c0,0-103.9,9.5-246.7-38C852,673,610,581,330,581C106,581,0,690,0,690V-32h1366V800z";
+"M1366,878c0,0-180-9-321-57C575.9,661.3,487.8,658,342,658C119,658,0,768,0,768V0h1366V878z";
 const pertama=
-"M1366,713c0,0-90.2-110-386.6-110C801.8,603,469,723,212.6,791.6C61.7,832.1,0,821,0,821V0h1366V713z";
+"M1366,878c0,0-180-9-321-57C575.9,661.3,487.8,658,342,658C119,658,0,768,0,768V0h1366V878z";
 
 
 const coba = document.querySelector('#tes');

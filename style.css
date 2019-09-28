@@ -5,46 +5,15 @@
 ::-webkit-scrollbar-thumb {
   background: #009EEB;
   border-radius: 12px;
+  height:30px;
 }
 /* FONT */
 @font-face {
-font-family: 'Gilroy-Bold';
-font-style: normal;
-font-weight: normal;
-src: local('Gilroy-Bold'), url('Gilroy-Bold.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Gilroy-Heavy';
-font-style: normal;
-font-weight: normal;
-src: local('Gilroy-Heavy'), url('Gilroy-Heavy.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Gilroy-Light';
-font-style: normal;
-font-weight: normal;
-src: local('Gilroy-Light'), url('Gilroy-Light.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Gilroy-Medium';
-font-style: normal;
-font-weight: normal;
-src: local('Gilroy-Medium'), url('Gilroy-Medium.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Gilroy-Regular';
-font-style: normal;
-font-weight: normal;
-src: local('Gilroy-Regular'), url('Gilroy-Regular.woff') format('woff');
-}
+  font-family: 'Gilroy-Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Heavy'), url('Gilroy-Heavy.woff') format('woff');
+  }
 /* FONT END  */
 
 * {box-sizing: border-box}
@@ -287,15 +256,18 @@ text-align: center !important;
   height: 16;
 }
 .dot3 p{
-  margin-left: -3px;
-  font-size: 12px;
-  padding-top: 10px;
+  font-family: 'Product Sans';
+  letter-spacing: -1;
+  margin-left: -10px;
+  font-size: 18px;
+  padding-top: 5px;
   text-align: center;
+  font-weight: 400;
 }
 .dot4 {
   border-style: none;
   height: 2.5px;
-  width: 28px;
+  width: 9.5rem;
   background-color: rgb(190, 190, 190);
   display: inline-block;
   vertical-align: middle;
@@ -359,20 +331,22 @@ a {
   text-decoration: none;
 }
 .title{
+  font-family: 'Gilroy-Heavy' !important;
   cursor: default;
-  display: inline-block;
+  display: block;
   text-align: center;
-  font-size: 10rem !important;
+  font-size: 9rem !important;
   position: absolute;
-  left: 25%;
-  padding-top: 40px;
+  left: 0%;
+  right: 0%;
+  margin-top: 13rem;
   z-index: 0;
   transition: 0.5s ease;
 }
 
 .title:hover{
   transition: 0.5 ease;
-  z-index: 10;
+  z-index: 1;
   text-shadow: 0.75rem 0.75rem black;
 }
 .title2{
@@ -389,7 +363,7 @@ a {
   
 }
 .bisnis{
-  margin-left: 1.9rem;
+  margin-left: 4rem !important;
 }
 
 .particle{
@@ -400,20 +374,19 @@ a {
 }
 
 .primaryfont{
-  font-family: 'Gilroy-Heavy';
+  font-family: 'Product Sans';
   font-size: 40px;  
+  font-weight: 600;
   letter-spacing: -1;
 }
 
 .secondaryfont{
-  font-family: 'gilroy-light';
+  font-family: 'Open Sans';
   font-size: 15px;
-  font-weight: 600;
 }
 .normalfont{
-  font-family: 'Gilroy-Medium';
+  font-family: 'Product Sans';
   font-size: 40px;
-  font-weight: 900;
 }
 
 .percentage{
@@ -427,7 +400,7 @@ a {
   margin: 0;
   margin-left: -5px;
   margin-top: -5px;
-  font-size: 18px;
+  font-size: 18px !important;
   text-align: center;
 }
 .wrapper{
@@ -447,7 +420,6 @@ margin-top: 160px;
 
 .content .secondaryfont{
   padding-right: 14rem;
-  text-align: justify;
 }
 /*tes*/
 .example-desc {
@@ -460,18 +432,6 @@ margin-top: 160px;
   padding-top: 16rem;
 }
 #carousel img {
-  visibility:hidden; /* hide images until carousel can handle them */
-  cursor:pointer; /* otherwise it's not as obvious items can be clicked */
-}
-#carousel2 {
- margin-left: 280px;
-  width:800px;
-    height: 300px;
-    display: relative;
-    clear:both;
-    overflow:hidden;
-}
-#carousel2 img {
   visibility:hidden; /* hide images until carousel can handle them */
   cursor:pointer; /* otherwise it's not as obvious items can be clicked */
 }
@@ -497,7 +457,7 @@ margin-top: 160px;
   text-align: center;
 }
 .tab h2{
-  font-family: 'Gilroy-medium';
+  font-size: 28px;
 }
 
 .tab i{
@@ -607,10 +567,6 @@ background-size: cover;
 .yearslider{
   font-size: 28px; ; position: absolute; cursor: pointer; 
 }
-#againts{
-  border-top: solid white;
-}
-
 .againts{
   margin: 0;
   font-size: 2.5rem;
@@ -620,7 +576,6 @@ background-size: cover;
 }
 .againts2{
   margin: 0;
-  text-align: justify;
   margin-left: 11.5rem;
   padding-top: 7rem;
 }
@@ -629,8 +584,6 @@ background-size: cover;
   
 }
 .title3{
-  font-family: 'Gilroy-Medium';
-  letter-spacing: 1;
   padding-top: 2rem;
   padding-bottom: 4rem;
   margin-left: 10px;
@@ -677,7 +630,6 @@ background-size: cover;
 }
 
 .foot{
-
   bottom: 0;
   position:absolute;
   max-width: 100%;
@@ -698,10 +650,10 @@ font-weight: 600;
 color: black;
 }
 .jt{
-  text-align: justify!important;
+  text-align: left!important;
   margin-top: 30px;
   padding-left: 8rem;
-  padding-right:30rem;
+  padding-right:27rem;
 }
 .jt2{
   padding-left: 7.5rem;
@@ -781,7 +733,7 @@ color: black;
      margin-left: 10px;
       margin-top: 15px;
 }
-.circle{
+.circle2{
   background-color:#fff;
   border:7px solid#1e88e5b2;    
   height:65px;

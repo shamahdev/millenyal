@@ -21,8 +21,8 @@
 <section id="landing">
 	<div class="slideshow-container">
 
-<nav class="secondaryfont" style="font-size: 18px; font-weight: normal; position: absolute; margin-top: 1.8rem;">
-	<a href="" class="primaryfont white badge">millenYal.</a>
+<nav data-aos="fade-down" data-aos-offset="300" data-aos-duration="500"  class="normalfont" style="font-size: 20px; font-weight: normal; position: absolute; margin-top: 1.8rem;">
+	<a href="" class="primaryfont white badge">Millenyal.</a>
   <a href="#" class="nav" style="margin-left: 45rem">Home</a> 
   <a href="#about" class="nav">About</a> 
   <a href="#revolution" class="nav">Revolution</a> 
@@ -30,10 +30,10 @@
 </nav>
 
 <!-- 1 -->
-<div class="mySlides fade">
+<div class="mySlides fade" >
   	<img class="particle loop-alternate-infinity" src="img/particle.png">
   	<p class="title primaryfont white">Millenials</p>
-  	<img src="img/man.png" class="centersolute" style="width: 15%; margin-top: 8.3rem;">
+  	<img src="img/man.png" class="centersolute hm" style="width: 15%; margin-top: 8.3rem;">
 </div>
 
 <!-- 2 -->
@@ -62,18 +62,13 @@
   </linearGradient>
   <path class="st0 pertama" d="M1366,768c0,0-121-111-364-111c-142.1,0-380.6,68.4-690,166C106,888,0,878,0,878V0h1366V768z"/>
   </svg>
-  <style>
-    path{
-      transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
-    }
-  </style>
   <a class="next" id="tes2" onclick="plusSlides(1)"><img src="img/rightarrow.png"></a>
 </div>
 <br>
 
 <!-- CONTENT -->
 
-  <div class="slider">
+  <div class="slider" data-aos="fade-left" data-aos-offset="600" data-aos-duration="500" >
     <button class="dot active" id="slideContent1"></button>
     <button class="dot" id="slideContent2"></button>
     <button class="dot" id="slideContent3"></button>
@@ -85,18 +80,18 @@
 
     <!-- div1 -->
     <div class="kolom" id="div1">
-		<div class="kolom73">
-			<img  data-aos="fade-right"data-aos-offset="350" data-aos-easing="ease-in-sine" src="img/content.png" class="pic">
+		<div class="kolom73" data-aos="fade-right" data-aos-offset="300" data-aos-duration="500" >
+			<img src="img/content.png" class="pic">
 		</div>  
-		<div class="kolom5 content" data-aos="fade-left" data-aos-offset="350" data-aos-easing="ease-in-sine">
-			<h1 class="primaryfont">Apa Itu Millenial?</h1>
-			<p class="secondaryfont">Milenial (juga dikenal sebagai Generasi Y atau Generasi Langgas) adalah kelompok demografi setelah Generasi X. Para ahli dan peneliti biasanya menggunakan awal 1980-an sebagai awal kelahiran kelompok ini dan pertengahan tahun 1990-an hingga awal 2000-an sebagai akhir kelahiran.<br><br>Milenial pada umumnya adalah anak-anak dari generasi Baby Boomers dan Gen-X yang tua. Milenial kadang-kadang disebut sebagai "Echo Boomers" karena adanya 'booming' (peningkatan besar).</p>
+		<div class="kolom5 content">
+			<h1 data-aos="fade-left" data-aos-offset="300" data-aos-duration="500"  class="primaryfont">Apa Itu Millenial?</h1>
+			<p data-aos="fade-right" data-aos-offset="200" data-aos-duration="500"  class="secondaryfont">Milenial (juga dikenal sebagai Generasi Y atau Generasi Langgas) adalah kelompok demografi setelah Generasi X. Para ahli dan peneliti biasanya menggunakan awal 1980-an sebagai awal kelahiran kelompok ini dan pertengahan tahun 1990-an hingga awal 2000-an sebagai akhir kelahiran.<br><br>Milenial pada umumnya adalah anak-anak dari generasi Baby Boomers dan Gen-X yang tua. Milenial kadang-kadang disebut sebagai "Echo Boomers" karena adanya 'booming' (peningkatan besar).</p>
 		</div>
   </div>
   
   <!-- div2 -->
   <div class="kolom" id="div2" style="display: none;" >
-    <div class="kolom73" data-aos="fade-right"data-aos-offset="350" data-aos-easing="ease-in-sine">
+    <div class="kolom73" data-aos="fade-right" data-aos-offset="350" data-aos-easing="ease-in-sine">
 			<img src="img/content2.png" class="pic2">
 		</div>
 		<div class="kolom5 content" data-aos="fade-left" data-aos-offset="350" data-aos-easing="ease-in-sine">
@@ -118,50 +113,54 @@
 </section>
 <section id="profile" class="hideme" style="height: 100vh">
     <div class="profile">
-        <h1 class="primaryfont">Pendapat Ahli</h1>
-          <div class="kolom12" id="carousel" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="40" data-aos="0">
+        <h1 class="primaryfont" data-aos="fade-down" data-aos-offset="200" data-aos-duration="500" >Pendapat Ahli</h1>
+          <div class="kolom12" id="carousel" data-aos="zoom-in-up" data-aos-duration="500" >
             <img src="img/profile.jpeg" data-title="Engkus Kusnadi" data-number=1 data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eos assumenda in molestiae eligendi labore quos voluptatum dolores voluptas quibusdam, doloremque id quod sequi cum inventore? Neque impedit porro ab." id="item-1" class="round"/>
             <img src="img/profile.jpeg" data-title="Dede Ropandhi" data-number=2 data-content="Caption 2" id="item-2" class="round" />
             <img src="img/profile.jpeg" data-title="Sendi Junaedi" data-number=3 data-content="Caption 3" id="item-3" class="round" />
           </div>
-      <div id="indicator">
+      <div id="indicator" data-aos="fade-up" data-aos-offset="-200" data-aos-duration="500" >
         <button class="dot2 active" id="profile1"></button>
          <button class="dot2" id="profile2"></button>
         <button class="dot2" id="profile3"></button>
       </div>
   </div>
-  <div class="kolom12 tab secondaryfont" id="textbox">
-    <h2>Engkus Kusnadi</h2>
+  <div class="kolom12 tab secondaryfont" id="textbox" data-aos="fade-up" data-aos-offset="0" data-aos-duration="500" >
+    <h2 class="primaryfont">Engkus Kusnadi</h2>
     <p><i>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eos assumenda in molestiae eligendi labore quos voluptatum dolores voluptas quibusdam, doloremque id quod sequi cum inventore? Neque impedit porro ab."</i></p>
   </div>
 </section>
 <section id="revolution">
-  <img src="img/Asset 13.png" style="width: 75%; position: absolute; z-index: -10; right:-250; margin-top: -15rem">
+  <img src="img/Asset 13.png" data-aos="zoom-in-left" data-aos-offset="400" data-aos-duration="500"  style="width: 75%; position: absolute; z-index: -10; right:-250; margin-top: -15rem">
     <div class="kolom">
       <div class="kolom8">
-        <div class="primaryfont againts title2">
+        <div class="primaryfont againts title2" data-aos="fade-down-right" data-aos-offset="200" data-aos-duration="500">
             <p>MILLENIALS</p>
             <p>AGAINTS INDUSTRIAL</p>
             <p>REVOLUTION 4.0</p>
         </div>
-        <p class="secondaryfont jt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a risus rhoncus, rutrum dolor quis, fringilla turpis. Pellentesque non auctor Nullam elementum aliquet nisl eget consequat. Praesent id lorem quis metus facilisis lobortis. Pellentesque non auctor Nullam elementum aliquet nisl eget consequat. Praesent id lorem quis metus facilisis lobortis.</p>
-      <p class="normalfont" style="text-align:left; font-size: 18px;letter-spacing: 0;padding-left: 7.5rem; padding-top: 5px">Persentase pengangguran<br>di Indonesia :</p>  
-      <div class="kolom secondaryfont jt2 percentage">
+        <p class="secondaryfont jt" data-aos="fade-right" data-aos-duration="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a risus rhoncus, rutrum dolor quis, fringilla turpis. Pellentesque non auctor Nullam elementum aliquet nisl eget consequat. Praesent id lorem quis metus facilisis lobortis. Pellentesque non auctor Nullam elementum aliquet nisl eget consequat. Praesent id lorem quis metus facilisis lobortis.</p>
+      <p class="normalfont" data-aos="fade-left" data-aos-duration="500" style="text-align:left; font-size: 20px; padding-left: 7.5rem; padding-top: 5px">Persentase pengangguran<br>di Indonesia :</p>  
+      <div class="kolom normalfont jt2 percentage" data-aos="fade-right" data-aos-duration="500" data-aos-offset="100">
         <div><span class="round-log">60</span>%<p>SMA</p></div>
         <div><span class="round-log2">24</span>%<p>SMK</p></div>
         <div><span class="round-log3">4</span>%<p>Sarjana</p></div>
-      </div>    
+      </div>
+      <div class="year" data-aos="flip-up" data-aos-duration="500" data-aos-offset="100">  
       <div id="2014"class="dot3 active" style="margin-left: 8rem; margin-top: 15px"><p>2014</p></div>
       <div id="2014line"class="dot4 active" style="margin-top: 15px"></div><div id="2018line"class="dot4" style="margin-top: 15px"></div>
       <div id="2018"class="dot3" style="margin-top: 15px"><p>2018</p></div>
+    </div>
       </div>
-          <img src="img/robot.png" style="width: 54%; right: -30; padding-top: 8rem;position: absolute; z-index: -5;"> 
+          <img src="img/robot.png" data-aos="fade-up-left" data-aos-offset="300" data-aos-duration="500"  style="width: 54%; right: -30; padding-top: 8rem;position: absolute; z-index: -5;"> 
       
-                    <img src="img/man1.png"  style="width: 29%;position: absolute; margin-top: 77.8rem; margin-left:60px; z-index: 3;">
+                    <img src="img/man1.png" style="width: 29%;position: absolute; margin-top: 77.8rem; margin-left:60px; z-index: 3;">
           
           <a href="#ex1" rel="modal:open" class="video"><img src="img/hiclipart.com-id_mutwh.png"></a>
         </div>
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-offset="600">
         <div class="btn" style="margin-top:11.2rem;position: absolute; margin-left: 11.5rem;"></div>
+        
         <div id="app" style="margin-top:11.6rem; position: absolute; margin-left: 13rem"></div>
         <div class="animate-flickesr" style="margin-left: 11rem; margin-top:15rem; position: absolute; ">
           <p style="font-size:18;" class="arial m-0">Generasi Millenial Terancam Menjadi Pengangguran</p>
@@ -172,6 +171,7 @@
           <span class="arial m-0" style="color: #5ac995; font-size:13px;">https://millenyal.co.id > Millenial</span>
         
         </div>
+      </div>
         
 <img src="img/bgg.png" style="max-width: 100%; z-index:4;">
 <!-- play vid -->
@@ -188,15 +188,15 @@
   <div class="primaryfont againts2" style="color: white; font-size: 46pt;">
     <p class="m-0">SIAPKAN</p>
     <p class="m-0">DIRIMU</p>
-    <p class="secondaryfont"  style="font-size: 20px; font-weight: normal; margin-right: 7rem; padding-top:20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a risus rhoncus, rutrum dolor quis, fringilla turpis. Pellentesque non auctor  Nullam elementum aliquet nisl eget consequat. Praesent id lorem quis metus facilisis lobortis. Pellentesque nisi enim, ullamcorper ac rhoncus eget, interdum sed mauris. Maecenas eu nisl sed ex maximus varius ac in mi. Maecenas a suscipit dui. Nullam pellentesque interdum est ullamcorper aliquam. Vestibulum feugiat ornare neque, et rutrum </p>
-    <p class="title3" style="font-size: 26pt; font-weight: 900;">Rekomendasi Pekerjaan untuk Kaum Millenial</p>
+    <p class="secondaryfont"  style="font-size: 20px; font-weight: 200; margin-right: 7rem; padding-top:20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a risus rhoncus, rutrum dolor quis, fringilla turpis. Pellentesque non auctor  Nullam elementum aliquet nisl eget consequat. Praesent id lorem quis metus facilisis lobortis. Pellentesque nisi enim, ullamcorper ac rhoncus eget, interdum sed mauris. Maecenas eu nisl sed ex maximus varius ac in mi. Maecenas a suscipit dui. Nullam pellentesque interdum est ullamcorper aliquam. Vestibulum feugiat ornare neque, et rutrum </p>
+    <p class="title3 normalfont" style="font-size: 28pt;">Rekomendasi Pekerjaan untuk Kaum Millenial</p>
     <a href="#jobs"><img src="img/downarrow2.png" class="arrow"></a>
   </div>  
 </div>
 <div class="kolom5">
   <img src="img/man1b.png" style="position: absolute; width:29%; margin-top: -21rem; margin-left:7rem; overflow-x: hidden;">
 </div>
-</section>
+<!-- </section>
 <section  id="jobs" >
   <div class="kolom">
     <div class="kolom4">
@@ -218,9 +218,9 @@
   
 </div>
 <div class="kolom4">
-<h1>aaaaaaa</h1>
+  <span class="circle2"></span>
 </div>
-</div>
+</div> -->
   </section>
 <section id="footer">
     <div class="profile">

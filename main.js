@@ -321,27 +321,6 @@ easing : "easeOutExpo"
       ]
 
   })
-
-  /* Every time the window is scrolled ... */
-  $(window).scroll( function(){
-  
-      /* Check the location of each desired element */
-      $('.hideme').each( function(i){
-          
-          var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-          var bottom_of_window = $(window).scrollTop() + $(window).height();
-          
-          /* If the object is completely visible in the window, fade it it */
-          if( bottom_of_window > bottom_of_object ){
-              
-              $(this).animate({'opacity':'1'},500);
-                  
-          }
-          
-      }); 
-  
-  });
-  
 });
 })
 var app = document.getElementById('app');
@@ -367,6 +346,9 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
+  $("#fade").modal({
+    fadeDuration: 100
+  });
 }
 
 // When the user clicks on <span> (x), close the modal

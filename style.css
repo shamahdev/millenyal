@@ -5,28 +5,34 @@
 ::-webkit-scrollbar-thumb {
   background: #009EEB;
   border-radius: 12px;
-  height:30px;
 }
-/* FONT */
+
+/* FONT IMPORT */
 @font-face {
-  font-family: 'Gilroy-Heavy';
-  font-style: normal;
+  font-family: 'gilroyextrabold';
+  src: url('/fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+       url('/fonts/gilroy-extrabold-webfont.woff') format('woff');
   font-weight: normal;
-  src: local('Gilroy-Heavy'), url('Gilroy-Heavy.woff') format('woff');
-  }
-/* FONT END  */
+  font-style: normal;
+}
+
+@font-face{
+    font-family: 'Open Sans';
+    src: url('/fonts/opensans-regular.woff2') format('woff2'),
+         url('/fonts/opensans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Product Sans';
+    src: url('/fonts/product_sans_regular.woff2') format('woff2'),
+         url('/fonts/product_sans_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*=============*/
 
 * {box-sizing: border-box}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  overflow: auto;
-  overflow-x: hidden;
-  margin: 0 auto;
-  height: 100%;
-}
-img {
-  vertical-align: middle;
-}
 html{
   scroll-behavior: smooth;
   margin:0;
@@ -37,20 +43,22 @@ html{
   -ms-user-select: none;
   height: 100%;
 }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: auto;
+  overflow-x: hidden;
+  margin: 0 auto;
+  height: 100%;
+}
+img {
+  vertical-align: middle;
+}
 section {
   display: block;
   position: relative;
   height: auto;
   min-height: 100vh;
 }
-/* Slideshow container */
-.slideshow-container {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  margin: auto;
-}
-
 .centersolute{
 position: absolute;
 margin-left: auto;
@@ -63,7 +71,9 @@ right: 0;
   display: block;
   width: 50%;
 }
-
+.prev, .next{
+  z-index:5;
+}
 .prev:hover{
   transition: 0.5s ease;
   padding-left: 4rem;
@@ -90,9 +100,9 @@ right: 0;
   padding-top: 10rem;
 }
 .pic2{
-  width: 87%;
-  padding: 6rem 0rem 3rem 6rem;
-  padding-top: 14rem;
+  width: 93%;
+  padding: 3rem 0rem 3rem 8rem;
+  padding-top: 11rem;
 }
 
 /* Position the "next button" to the right */
@@ -285,7 +295,6 @@ text-align: center !important;
   color:white;
   text-decoration-line: underline;
 }
-
 /* Fading animation */
 
 
@@ -324,14 +333,11 @@ padding-bottom: 10rem
 .white{
   color: white;
 }
-.black{
-  color: white;
-}
 a {
   text-decoration: none;
 }
 .title{
-  font-family: 'Gilroy-Heavy' !important;
+  font-family: 'gilroyextrabold' !important;
   cursor: default;
   display: block;
   text-align: center;
@@ -369,12 +375,36 @@ a {
 .particle{
   width: 65%;
   position: absolute;
-  margin-left: 240px;
   margin-top: 200px;
+  animation: pt 0.6s infinite alternate;
+}
+
+  @keyframes pt {
+  from {width: 65%;}
+  to {width: 67%;}
+}
+
+.particle2{
+  width: 65%;
+  position: absolute;
+  margin-top: 200px;
+  animation: pt 0.5s infinite alternate;
+}
+
+  @keyframes pt {
+  from {width: 65%;}
+  to {width: 68%;}
 }
 
 .primaryfont{
   font-family: 'Product Sans';
+  font-size: 40px;  
+  font-weight: 600;
+  letter-spacing: -1;
+}
+
+.titlefont{
+  font-family: 'gilroyextrabold';
   font-size: 40px;  
   font-weight: 600;
   letter-spacing: -1;
@@ -419,7 +449,7 @@ margin-top: 160px;
 }
 
 .content .secondaryfont{
-  padding-right: 14rem;
+  padding-right: 13.5rem;
 }
 /*tes*/
 .example-desc {
@@ -434,6 +464,7 @@ margin-top: 160px;
 #carousel img {
   visibility:hidden; /* hide images until carousel can handle them */
   cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+  width:230px;
 }
 .round{
   transition: 0.4s ease;
@@ -458,8 +489,13 @@ margin-top: 160px;
 }
 .tab h2{
   font-size: 28px;
+  margin-bottom: 0px;
 }
-
+.tab span{
+  font-family: 'Product Sans';
+  font-size:17px !important;
+  color: #009EEB;
+}
 .tab i{
 font-style: normal;
 }
@@ -717,13 +753,6 @@ color: black;
   background-image: url('img/close.png');
 
 }
-@keyframes fadeIn { 
-  from { opacity: 0; } 
-}
-
-.animate-flicker {
-    animation: fadeIn 12s infinite alternate;
-}
 .dotbisnis{
   height: 35px;
    width: 35px;
@@ -742,3 +771,56 @@ color: black;
   -webkit-border-radius:50%;
   width:65px;
 }
+
+.icon-bar {
+  z-index:99;
+  position: fixed;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px 12px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  font-size: 24px;
+  padding: 24px 12px;
+}
+
+.facebook {
+  border-top-right-radius: 20px;
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+  border-bottom-right-radius: 20px;
+}
+

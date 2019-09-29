@@ -6,64 +6,31 @@ $(document).ready(function () {
   movingToCenter: function () {
   $('#textbox i').empty();
   $('#textbox h2').empty();
+  $('#textbox span').empty();
   },
   movedToCenter: function ($item) {
   var caption = $item.data('content');
   var name = $item.data('title');
-  $('#textbox i').append("&quot;"+caption+"&quot;");
+  var org = $item.data('org');
+  $('#textbox i').append("&#x201c;"+caption+"&#x201d;");
   $('#textbox h2').append(name);
+  $('#textbox span').append(org);
   }
   });
+
+  
+
   $(document).ready(function() {
     $("#carousel2").waterwheelCarousel({
       
-      horizon: 110,
-    horizonOffset: -50,
+    horizon: 110,
+    horizonOffset: -30,
     horizonOffsetMultiplier: .7,
     separation: 150,
     edgeFadeEnabled: true
     });
   });
   //profile slider indicators
-  $('#profile4').bind('click', function () {
-
-    $('#profile4').addClass( "active" );
-
-    $('#profile5').removeClass("active");
-    $('#profile6').removeClass("active");
-    $('#textbox').fadeOut('fast', function(){
-      carousel.prev();
-      $('#textbox').fadeIn('fast');
-  });
-    return false
-  });
-
-  $('#profile5').bind('click', function () {
-
-    $('#profile5').addClass( "active" );
-    $('#profile4').removeClass("active");
-    $('#profile6').removeClass("active");
-
-    $('#textbox').fadeOut('fast', function(){
-      carousel.next();
-      $('#textbox').fadeIn('fast');
-  });
-    return false
-  });
-
-  $('#profile6').bind('click', function () {
-
-    $('#profile6').addClass( "active" );
-    $('#profile5').removeClass("active");
-    $('#profile4').removeClass("active");
-
-    $('#textbox').fadeOut('fast', function(){
-      carousel.next();
-      $('#textbox').fadeIn('fast');
-  });
-    return false;
-  });
-
   $('#reload').bind('click', function () {
     newOptions = eval("(" + $('#newoptions').val() + ")");
     carousel.reload(newOptions);
@@ -115,20 +82,22 @@ $(document).ready(function () {
   });
 });
 
-
+function randomValues() {
 anime({
 targets: '.loop-alternate-infinity',
 translateX: function() {
-    return anime.random(-60, 60);
+    return anime.random(-15,15);
   },
 translateY: function() {
-    return anime.random(-60, 40);
+    return anime.random(-15, 15);
   },
-speed: '200',
-direction: 'alternate',
-loop: true,
-easing: 'easeInOutSine'
+speed: 200,
+duration: 1000,
+easing: 'easeInOutSine',
+complete: randomValues
 });
+}
+randomValues();
 
 anime({
   targets: '.dom-attribute-demo input',
@@ -351,7 +320,6 @@ var typewriter = new Typewriter(app, {
 typewriter.typeString('Millenial')
     .pauseFor(2500)
     .deleteAll()
-  
     .start();
 
 // Get the modal

@@ -1,3 +1,27 @@
+/* FONT IMPORT */
+@font-face {
+  font-family: 'Gilroy-Heavy';
+  src: url('fonts/Gilroy-Heavy.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  }
+
+@font-face{
+    font-family: 'Open Sans';
+    src: url('fonts/opensans-regular.woff2') format('woff2'),
+         url('fonts/opensans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Product Sans';
+    src: url('fonts/product_sans_regular.woff2') format('woff2'),
+         url('fonts/product_sans_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*=============*/
+
 /* GANTI SCROLL */
 ::-webkit-scrollbar {
   width: 12px;
@@ -6,32 +30,6 @@
   background: #009EEB;
   border-radius: 12px;
 }
-
-/* FONT IMPORT */
-@font-face {
-  font-family: 'gilroyextrabold';
-  src: url('/fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
-       url('/fonts/gilroy-extrabold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face{
-    font-family: 'Open Sans';
-    src: url('/fonts/opensans-regular.woff2') format('woff2'),
-         url('/fonts/opensans-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face{
-    font-family: 'Product Sans';
-    src: url('/fonts/product_sans_regular.woff2') format('woff2'),
-         url('/fonts/product_sans_regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-/*=============*/
-
 * {box-sizing: border-box}
 html{
   scroll-behavior: smooth;
@@ -87,7 +85,7 @@ right: 0;
   padding-left: 5rem;
   cursor: pointer;
   position: absolute;
-  top: 45%;
+  top: 35%;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -337,7 +335,7 @@ a {
   text-decoration: none;
 }
 .title{
-  font-family: 'gilroyextrabold' !important;
+  font-family: 'Gilroy-Heavy' !important;
   cursor: default;
   display: block;
   text-align: center;
@@ -404,7 +402,7 @@ a {
 }
 
 .titlefont{
-  font-family: 'gilroyextrabold';
+  font-family: 'Gilroy-Heavy';
   font-size: 40px;  
   font-weight: 600;
   letter-spacing: -1;

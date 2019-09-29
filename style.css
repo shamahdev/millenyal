@@ -204,7 +204,6 @@ text-align: center !important;
 }
 
 .badge{
-  margin-left: 85px;
   font-size: 34px !important;
 }
 
@@ -318,13 +317,13 @@ padding-bottom: 10rem
   }
 
 .navbar{
-  font-size: 20px ;
+  font-size: 18px;
   position: absolute;
-  margin-top: 3rem;
+  margin-top: 1.8rem;
 }
 
 .nav{
-  margin: 0 12px;
+  margin: 0 16px;
   color: white;
 }
 
@@ -435,6 +434,9 @@ a {
   text-align:center;
   height:100%;
 }
+.carousel-center{
+  border-color: #009EEB !important;
+}
 
 .slider{
   position: absolute;
@@ -458,23 +460,25 @@ margin-top: 160px;
 #carousel {
   width:100%;
   padding-top: 16rem;
+  left: 0%;
 }
 #carousel img {
   visibility:hidden; /* hide images until carousel can handle them */
   cursor:pointer; /* otherwise it's not as obvious items can be clicked */
-  width:230px;
+  width:240px;
 }
 .round{
   transition: 0.4s ease;
+  border-width: 0px;
   border-radius: 100%;
   border-style: solid;
   border-color: white;
 }
 .round:hover{
   transition: 0.4s ease;
-  border-width: 10px;
+  border-width: 5px;
   border-style: solid;
-  border-color: white;
+  border-color: #009EEB;
 }
 
 .profile{
@@ -821,4 +825,17 @@ color: black;
   color: white;
   border-bottom-right-radius: 20px;
 }
+
+.fader{
+    height: 235vh;
+    width: 100%;
+    position: absolute;
+    background: black;
+    z-index: 5;
+    opacity: 0;
+  }
+
+  #fadeup{
+    opacity: 0;
+  }
 

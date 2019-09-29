@@ -1,7 +1,41 @@
 // PROFILE SLIDER
 AOS.init();
+
+//Animate
+$(document).ready(function(){
+  $(window).scroll(function(){
+
+var akhir = $(window).scrollTop()/15 - 214;
+var opacity = $(window).scrollTop()/500 -5;      
+
+console.log(opacity);
+console.log(akhir);
+         
+if(akhir <= 3.4){        
+ $('.fader').css("opacity", "0");  
+ $('.orang').css("margin-left", "3.4rem");    
+}
+else if(akhir >= 50 ){
+ $('.orang').css("margin-left", "50rem");              
+}else{          
+ $('.orang').css("margin-left", ($(window).scrollTop()/15 - 214)+'rem');  
+}
+if(akhir >= 3.4){          
+ $('.fader').css("opacity", $(window).scrollTop()/500 -6);          
+}                
+if(akhir >= 45){
+ $('#fadeup').addClass("hideme")
+}
+})
+});
+
 $(document).ready(function () {
   var carousel = $("#carousel").waterwheelCarousel({
+
+  // Config
+  autoPlay: 8000,
+  separation: 250,
+  separationMultiplier: 0.5,
   flankingItems: 3,
   movingToCenter: function () {
   $('#textbox i').empty();

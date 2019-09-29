@@ -280,6 +280,10 @@ text-align: center !important;
   vertical-align: middle;
   transition: 0.s ease;
 }
+#indicator{
+  margin-top:17.5rem;
+}
+
 #indicator .active{
   width: 18px;
   height: 18px;
@@ -434,10 +438,6 @@ a {
   text-align:center;
   height:100%;
 }
-.carousel-center{
-  border-color: #009EEB !important;
-}
-
 .slider{
   position: absolute;
   margin-left: 46.5rem;
@@ -459,13 +459,11 @@ margin-top: 160px;
 
 #carousel {
   width:100%;
-  padding-top: 16rem;
-  left: 0%;
 }
 #carousel img {
   visibility:hidden; /* hide images until carousel can handle them */
   cursor:pointer; /* otherwise it's not as obvious items can be clicked */
-  width:240px;
+  width:220px;
 }
 .round{
   transition: 0.4s ease;
@@ -477,8 +475,6 @@ margin-top: 160px;
 .round:hover{
   transition: 0.4s ease;
   border-width: 5px;
-  border-style: solid;
-  border-color: #009EEB;
 }
 
 .profile{

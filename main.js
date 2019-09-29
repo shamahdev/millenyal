@@ -11,7 +11,8 @@ var opacity = $(window).scrollTop()/500 -5;
 console.log(opacity);
 console.log(akhir);
          
-if(akhir <= 3.4){        
+if(akhir <= 3.4){
+$('.fader').css("display", "none"); 
  $('.fader').css("opacity", "0");  
  $('.orang').css("margin-left", "3.4rem");    
 }
@@ -20,12 +21,10 @@ else if(akhir >= 50 ){
 }else{          
  $('.orang').css("margin-left", ($(window).scrollTop()/15 - 214)+'rem');  
 }
-if(akhir >= 3.4){          
+if(akhir >= 3.4){
+$('.fader').css("display", "block"); 
  $('.fader').css("opacity", $(window).scrollTop()/500 -6);          
 }                
-if(akhir >= 45){
- $('#fadeup').addClass("hideme")
-}
 })
 });
 

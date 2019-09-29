@@ -227,7 +227,7 @@ const pertama=
 
 const prevS=document.querySelector('#prevSlide');
 const nextS=document.querySelector('#nextSlide');
-prevS.click(function() { 
+prevS.onclick = function() {
       
     const timeline = anime.timeline({
       duration:2000,
@@ -247,68 +247,8 @@ prevS.click(function() {
       stop: [ ["30", "rgba(68,195,255,1)"], ["40", "rgba(34,68,171,1)"] ]
 
   })
-});
+}
 
-nextS.click(function() { 
-
-const timeline = anime.timeline({
-duration:2000,
-easing : "easeOutExpo"
-
-  });
-  timeline.add({
-      targets:".pertama",
-    
-});
-const kedua=
-"M1366,800c0,0-103.9,9.5-246.7-38C852,673,610,581,330,581C106,581,0,690,0,690V-32h1366V800z";
-const pertama=
-"M1366,713c0,0-90.2-110-386.6-110C801.8,603,469,723,212.6,791.6C61.7,832.1,0,821,0,821V0h1366V713z";
-
-const prevS= document.querySelector('#tes');
-const nextS=document.querySelector('#tes2');
-let toggle = false;
-
-prevS.addEventListener('click', () =>{
-    
-    $('path.st0').css("fill","url('#GRADI2')")  
-
-    const timeline = anime.timeline({
-    duration:2000,
-    easing : "easeOutExpo"
-      
-    });
-    timeline.add({
-        targets:".pertama",
-      
-        d: [
-            {value:kedua}
-        ]
- 
-    })
-
-    
-});
-nextS.addEventListener('click', () =>{
-  
-  $('path.st0').css("fill","url('#SVGID_1_')")
-
-  const timeline = anime.timeline({
-  duration:2000,
-  easing : "easeOutExpo"
-
-  });
-  timeline.add({
-      targets:".pertama",
-    
-
-      d: [
-          {value:pertama}
-      ]
-
-  })
-});
-})
 var app = document.getElementById('app');
 
 var typewriter = new Typewriter(app, {

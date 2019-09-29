@@ -230,7 +230,6 @@ text-align: center !important;
 /* The dots/bullets/indicators */
 .dot2 {
   border-style: none;
-  cursor: pointer;
   height: 14px;
   width: 14px;
   margin: 0 2px;
@@ -239,11 +238,6 @@ text-align: center !important;
   display: inline-block;
   vertical-align: middle;
   transition: 0.4s ease;
-}
-.dot2:hover{
-  transition: 0.4s ease;
-  width: 18;
-  height: 18;
 }
 .dot3 {
   border-style: none;
@@ -283,13 +277,7 @@ text-align: center !important;
 #indicator{
   margin-top:17.5rem;
 }
-
-#indicator .active{
-  width: 18px;
-  height: 18px;
-}
-
-.active, .dot2:hover, .dot:hover, .dot3:hover{
+.active, .dot:hover, .dot3:hover{
   background-color: #009EEB;
 }
 .active2, .yearslider:hover{

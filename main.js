@@ -28,14 +28,15 @@ $('.fader').css("display", "block");
 })
 });
 
+
 $(document).ready(function () {
   var carousel = $("#carousel").waterwheelCarousel({
-
   // Config
   autoPlay: 8000,
   separation: 250,
   separationMultiplier: 0.5,
   flankingItems: 3,
+  
   movingToCenter: function () {
   $('#textbox i').empty();
   $('#textbox h2').empty();
@@ -45,6 +46,9 @@ $(document).ready(function () {
   var caption = $item.data('content');
   var name = $item.data('title');
   var org = $item.data('org');
+  var dot = $item.data('number');
+  $('#indicator button').removeClass( "active" );
+  $('#profile'+[dot]).addClass( "active" );
   $('#textbox i').append("&#x201c;"+caption+"&#x201d;");
   $('#textbox h2').append(name);
   $('#textbox span').append(org);
@@ -214,47 +218,20 @@ for (i = 0; i < slides.length; i++) {
 }
 slides[slideIndex-1].style.display = "block";  
 }
-//Fade out
-$(document).ready(function() {
-    
-    // /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-            
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-         var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-              $(this).animate({'opacity':'1'},1000);
-                    
-            }
-            
-       }); 
-    
-     });
-    
-});
+
 //Svg Morph
 const kedua=
-"M1366,878c0,0-180-9-321-57C575.9,661.3,487.8,658,342,658C119,658,0,768,0,768V0h1366V878z";
+"M1366,800c0,0-103.9,9.5-246.7-38C852,673,610,581,330,581C106,581,0,690,0,690V-32h1366V800z";
 const pertama=
-"M1366,878c0,0-180-9-321-57C575.9,661.3,487.8,658,342,658C119,658,0,768,0,768V0h1366V878z";
+"M1366,713c0,0-90.2-110-386.6-110C801.8,603,469,723,212.6,791.6C61.7,832.1,0,821,0,821V0h1366V713z";
 
-
-const coba = document.querySelector('#tes');
-const coba1=document.querySelector('#tes2');
-let toggle = false;
-
-coba.addEventListener('click', () =>{
-  
+const prevS=document.querySelector('#prevSlide');
+const nextS=document.querySelector('#nextSlide');
+prevS.click(function() { 
+      
     const timeline = anime.timeline({
-duration:2000,
-easing : "easeOutExpo"
-
+      duration:2000,
+      easing : "easeOutExpo"
     });
     timeline.add({
         targets:".pertama",
@@ -271,8 +248,10 @@ easing : "easeOutExpo"
 
   })
 });
-coba1.addEventListener('click', () =>{
-  const timeline = anime.timeline({
+
+nextS.click(function() { 
+
+const timeline = anime.timeline({
 duration:2000,
 easing : "easeOutExpo"
 
@@ -286,16 +265,18 @@ const kedua=
 const pertama=
 "M1366,713c0,0-90.2-110-386.6-110C801.8,603,469,723,212.6,791.6C61.7,832.1,0,821,0,821V0h1366V713z";
 
-const coba = document.querySelector('#tes');
-const coba1=document.querySelector('#tes2');
+const prevS= document.querySelector('#tes');
+const nextS=document.querySelector('#tes2');
 let toggle = false;
 
-coba.addEventListener('click', () =>{
-  
-    const timeline = anime.timeline({
-duration:2000,
-easing : "easeOutExpo"
+prevS.addEventListener('click', () =>{
+    
+    $('path.st0').css("fill","url('#GRADI2')")  
 
+    const timeline = anime.timeline({
+    duration:2000,
+    easing : "easeOutExpo"
+      
     });
     timeline.add({
         targets:".pertama",
@@ -305,11 +286,16 @@ easing : "easeOutExpo"
         ]
  
     })
+
+    
 });
-coba1.addEventListener('click', () =>{
+nextS.addEventListener('click', () =>{
+  
+  $('path.st0').css("fill","url('#SVGID_1_')")
+
   const timeline = anime.timeline({
-duration:2000,
-easing : "easeOutExpo"
+  duration:2000,
+  easing : "easeOutExpo"
 
   });
   timeline.add({

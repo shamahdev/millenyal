@@ -36,6 +36,7 @@ div#preloader img {
   display: block;
   position: absolute;
   margin:auto;
+  width: 10%;
   top:0;
   bottom:0;
   left: 0;
@@ -78,7 +79,6 @@ img {
 .slideshow-container {
   margin: auto;
 }
-
 section {
   display: block;
   position: relative;
@@ -344,20 +344,22 @@ text-align: center !important;
 }
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+  -webkit-animation: fade 1s ease;
+  animation: fade 1s ease;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4} 
+  to {
+    opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4} 
+  to {
+    opacity: 1}
 }
 
 /* On smaller screens, decrease text size */
@@ -369,7 +371,7 @@ cursor: pointer;
 transition: 0.5s ease;
 width: 10%;
 margin-left: 20px;
-padding-bottom: 5rem;
+padding-bottom: 8rem;
 animation: arrownime 0.5s infinite alternate;
 }
 .arrow:hover{
@@ -377,9 +379,9 @@ animation: arrownime 0.5s infinite alternate;
   }
 
 @keyframes arrownime {
-    from {padding-top: 0rem;} 
+    from {margin-top: 0rem;} 
     to {margin-top: 2rem;
-      padding-bottom: 3rem;}
+      padding-bottom: 6rem;}
   }
 
 .navbar{
@@ -399,6 +401,7 @@ animation: arrownime 0.5s infinite alternate;
 a {
   text-decoration: none;
 }
+/* Millenials */
 .title{
   font-family: 'Gilroy-Heavy' !important;
   cursor: default;
@@ -417,6 +420,44 @@ a {
   transition: 0.5 ease;
   z-index: 1;
   text-shadow: 0.75rem 0.75rem black;
+}
+/* BabyBoomers */
+.title5{
+  font-family: 'Gilroy-Heavy' !important;
+  cursor: default;
+  display: block;
+  text-align: center;
+  font-size: 9rem !important;
+  initial-letter: -1;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  margin-top: 11rem;
+  transition: 0.5s ease;
+}
+
+div.tile{
+  display:block;
+  transition: 0.5 ease;
+  z-index: 0;
+}
+div.tile:hover, div.tile p:hover{
+  transition: 0.5 ease;
+  z-index: 1 !important;
+  text-shadow: 0.75rem 0.75rem black;
+}
+.title6{
+  font-family: 'Gilroy-Heavy' !important;
+  cursor: default;
+  display: block;
+  text-align: center;
+  font-size: 7rem !important;
+  initial-letter: -1;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  margin-top: 18.5rem;
+  transition: 0.5s ease;
 }
 .title2{
   margin-top: 2rem !important;
@@ -894,7 +935,7 @@ color: black;
 }
 
 .google {
-  background: #dd4b39;
+  background: #13b12d;
   color: white;
 }
 

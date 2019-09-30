@@ -369,11 +369,17 @@ cursor: pointer;
 transition: 0.5s ease;
 width: 10%;
 margin-left: 20px;
-padding-bottom: 10rem
+padding-bottom: 5rem;
+animation: arrownime 0.5s infinite alternate;
 }
 .arrow:hover{
   transition: 0.5s ease;
-  padding-top: 2rem;
+  }
+
+@keyframes arrownime {
+    from {padding-top: 0rem;} 
+    to {margin-top: 2rem;
+      padding-bottom: 3rem;}
   }
 
 .navbar{
@@ -458,6 +464,13 @@ a {
   width: 150px;
   right: 200px;
 }
+
+.particle4{
+  position: absolute;
+  width: 150px;
+  left: 55px;
+}
+
 
 .primaryfont{
   font-family: 'Product Sans';
@@ -690,8 +703,8 @@ background-size: cover;
   
 }
 .title3{
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  color: #009EEB;
+  padding-top: 1rem;
   margin-left: 10px;
   text-align: left;
 }

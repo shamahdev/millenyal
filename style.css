@@ -612,6 +612,10 @@ background-size: cover;
   margin-left: 10px;
   text-align: left;
 }
+
+.title3 p{
+  font-size: 64px;
+}
 .alert{
   padding: 0 28rem;
   text-align: center;

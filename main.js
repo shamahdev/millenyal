@@ -1,6 +1,11 @@
 // PROFILE SLIDER
 AOS.init();
 
+preloader
+$(window).on("load",function(){
+  $("#preloader").fadeOut("slow");
+});
+
 //Animate
 $(document).ready(function(){
   $(window).scroll(function(){
@@ -234,7 +239,8 @@ const pertama=
 const prevS=document.querySelector('#prevSlide');
 const nextS=document.querySelector('#nextSlide');
 prevS.onclick = function() {
-      
+    
+    $('path.st0').css('fill', 'rgb(209, 0, 209)');
     const timeline = anime.timeline({
       duration:2000,
       easing : "easeOutExpo"
@@ -247,10 +253,20 @@ prevS.onclick = function() {
         ]
  
     })
-   add({
-      targets:".gradi",
+}
+nextS.onclick = function() {
+
+  $('path.st0').css('fill', '#0089D1');
+  const timeline = anime.timeline({
+    duration:2000,
+    easing : "easeOutExpo"
+  });
+  timeline.add({
+      targets:".pertama",
     
-      stop: [ ["30", "rgba(68,195,255,1)"], ["40", "rgba(34,68,171,1)"] ]
+      d: [
+          {value:pertama}
+      ]
 
   })
 }
@@ -309,3 +325,22 @@ $(function () {
   fadeInOut();
 });
 $('body').css('min-height', screen.height);
+
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

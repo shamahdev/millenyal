@@ -21,7 +21,11 @@
   <link rel="shortcut icon" href="img/robot.png">
 </head>
 <body>
+    <div id="preloader">
+      <img src="img/preloader.gif">
+    </div>
 <section id="landing">
+    <!-- Social bar -->
     <div class="icon-bar" data-aos="fade-right" data-aos-offset="2000" data-aos-duration="500">
         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
@@ -29,6 +33,10 @@
         <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
         <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
       </div>
+
+    <!-- top -->
+    <span data-aos="fade-up" data-aos-offset="500" data-aos-duration="500" onclick="topFunction()" id="myBtn" class="hoveric white fa fa-arrow-up fa-1x"></span>
+
 	<div class="slideshow-container">
 <nav data-aos="fade-down" data-aos-offset="300" data-aos-duration="500">
 <div class="navbar" style="left:0; margin-left:60px;">
@@ -66,23 +74,6 @@
   <!-- SVG -->
   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      viewBox="0 0 1366 878" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
-  <style type="text/css">
-    .st0{fill:url(#SVGID_1_);}
-  </style>
-  <linearGradient class="gradi" id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1474.2449" y1="767.6348" x2="-101.7551" y2="-26.3652">
-    <stop  offset="0" style="stop-color:#00A5F4"/>
-    <stop  offset="0.1793" style="stop-color:#009EEB"/>
-    <stop  offset="0.4772" style="stop-color:#0089D1"/>
-    <stop  offset="0.8548" style="stop-color:#0069A8"/>
-    <stop  offset="0.9944" style="stop-color:#005B97"/>
-  </linearGradient>
-  <linearGradient class="gradi" id="GRADI2" gradientUnits="userSpaceOnUse" x1="1474.2449" y1="767.6348" x2="-101.7551" y2="-26.3652">
-      <stop  offset="0" style="stop-color:rgb(238, 11, 144)"/>
-      <stop  offset="0.1793" style="stop-color:rgb(235, 0, 118)"/>
-      <stop  offset="0.4772" style="stop-color:rgb(209, 0, 87)"/>
-      <stop  offset="0.8548" style="stop-color:rgb(168, 0, 0)"/>
-      <stop  offset="0.9944" style="stop-color:rgb(151, 0, 0)"/>
-    </linearGradient>
   <path class="st0 pertama" d="M1366,713c0,0-90.2-110-386.6-110C801.8,603,469,723,212.6,791.6C61.7,832.1,0,821,0,821V0h1366V713z"/>
   </svg>
 </div>
@@ -90,16 +81,21 @@
 
 <!-- CONTENT -->
 
-  <div class="slider" data-aos="fade-left" data-aos-offset="600" data-aos-duration="500" >
-    <button class="dot active" id="slideContent1"></button>
-    <button class="dot" id="slideContent2"></button>
-    <button class="dot" id="slideContent3"></button>
+  <div class="slider" data-aos="fade-left" data-aos-offset="500" data-aos-duration="500">
+    <a class="dot active" id="slideContent1"></a>
+    <a class="dot" id="slideContent2"></a>
+    <a class="dot" id="slideContent3"></a>
   </div>
 
 
 </section>
 <section id="about">
 
+  <div class="particle3" data-aos="fade-down-left" data-aos-offset="400" data-aos-duration="500">
+    <img src="img/particle_biru.png">
+  </div>
+    
+  
     <!-- div1 -->
     <div class="kolom" id="div1">
 		<div class="kolom73" data-aos="fade-right" data-aos-offset="300" data-aos-duration="500" >
@@ -112,7 +108,7 @@
   </div>
   
   <!-- div2 -->
-  <div class="kolom" id="div2" style="display: none;" >
+  <div class="kolom" id="div2" style="display: none;">
     <div class="kolom73">
 			<img src="img/content2.png" class="pic">
 		</div>
@@ -129,19 +125,13 @@
 		</div>
 		<div class="kolom5 content" data-aos="fade-left" data-aos-offset="350" data-aos-easing="ease-in-sine">
 			<h1 class="primaryfont">Kebiasaan</h1>
-			<p class="secondaryfont">
-        <ul>
-          <li>Hey</li>
-          <li>Hey</li>
-          <li>Hey</li>
-          <li>Hey</li>
-          <li>Hey</li>
-        </ul>
-      </p>
+			<p class="secondaryfont">Menurut AdAge, millennial menghabiskan rata-rata 25 jam per minggu berselancar di dunia maya. Mereka menjelajahi web, blog, dan media sosial, serta saling berbagi, menyukai, hingga mengomentari semua konten yang mereka temukan. Konten yang autentik akan lebih menggugah dan memotivasi mereka untuk terus menyebarkannya kembali kepada komunitas online.<br><br>Hubspot juga menerangkan 65 persen millennial berinteraksi dengan brand atau produk secara online di media sosial, terutama Facebook dan Twitter.</p>
     </div>
   </div>
 </section>
 <section id="profile" style="height: 100vh">
+  <img src="img/float.png" data-aos="fade-down-left" data-aos-offset="100" data-aos-duration="500"style="position: absolute; margin-top:400px; left:-10px;" width="30%">
+  <img src="img/float2.png" data-aos="fade-up-right" data-aos-offset="100" data-aos-duration="500"style="position: absolute; margin-top:-200px;right:-50px;" width="25%">
     <div class="profile">
         <h1 class="primaryfont" data-aos="fade-down" data-aos-offset="100" data-aos-duration="500">Pendapat Ahli</h1>
           <div class="kolom12 centersolute" id="carousel" data-aos="zoom-in" data-aos-duration="500">
@@ -186,7 +176,7 @@
           <img src="img/robot.png" data-aos="fade-up-left" data-aos-offset="300" data-aos-duration="500"  style="width: 54%; right: -3%; padding-top: 8rem;position: absolute; z-index: -5;"> 
       
           <img class="orang" src="img/man1b.png" style="width: 29%;position: absolute; margin-top: 77rem; margin-left: 3.4rem; z-index: 6;">
-          <a href="#ex1" rel="modal:open" class="video"><img src="img/hiclipart.com-id_mutwh.png"></a>
+          <a data-aos="zoom-in-up" data-aos-duration="500" data-aos-offset="00" href="#ex1" rel="modal:open" class="video"><img src="img/Asset 20.png"></a>
 
         </div>
         <div data-aos="fade-up" data-aos-duration="500" data-aos-offset="400">
@@ -207,9 +197,9 @@
 <img src="img/bgg.png" style="max-width: 100%; z-index:5;">
 <!-- play vid -->
 <div id="ex1" class="modal">
-    <iframe width="960" height="540"src="https://www.youtube.com/embed/D_v8oX5s51g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="960" height="540" src="https://www.youtube.com/embed/DMgNnSk8reQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-  
+
  <!-- end -->
 </section>    
 <section id="againts"style="background-color: black; z-index:5; overflow-y: hidden; overflow-x: hidden;">
@@ -527,7 +517,7 @@
     
         <div class="kolom12" id="carousel2" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="500">
             <img src="img/sad.jpeg" data-title="Shaddam Amru Hasibuan" data-number=1 data-content="Programmer/Coder" id="item-4" class="round"/>
-            <img src="img/can.jpeg" data-title="Candra Miftah Bercandra" data-number=2 data-content="UI/UX Designer" id="item-5" class="round" />
+            <img src="img/can.jpeg" data-title="Candra Miftah Firdaus" data-number=2 data-content="UI/UX Designer" id="item-5" class="round" />
             <img src="img/rif.jpeg" data-title="Muhammad Rifki Erlangga" data-number=3 data-content="Programmer/Coder" id="item-6" class="round" />
           </div>
   <div class="kolom12 tab2 secondaryfont" id="textbox2" style="margin-top: 300px;" data-aos="fade-down" data-aos-offset="200" data-aos-duration="500">

@@ -22,6 +22,26 @@
 }
 /*=============*/
 
+/* Preloader */
+div#preloader {
+  display: block;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow-y: none !important;
+  background: white;
+}
+div#preloader img {
+  display: block;
+  position: absolute;
+  margin:auto;
+  top:0;
+  bottom:0;
+  left: 0;
+  right: 0;
+}
+
 /* GANTI SCROLL */
 ::-webkit-scrollbar {
   width: 12px;
@@ -29,6 +49,7 @@
 ::-webkit-scrollbar-thumb {
   background: #009EEB;
   border-radius: 12px;
+  height: 24px;
 }
 * {box-sizing: border-box}
 html{
@@ -65,6 +86,13 @@ margin-right: auto;
 left: 0;
 right: 0;
 }
+
+/* GRAD */
+path.st0{
+  fill:#0089D1;
+}
+
+
 /* Next & previous buttons */
 .prev img, .next img{
   display: block;
@@ -216,8 +244,8 @@ text-align: center !important;
 .dot{
   border-style: none;
   cursor: pointer;
-  height: 48px;
-  width: 2px;
+  height: 72px;
+  width: 8px !important;
   margin: 8px 0px;
   background-color: rgb(120, 120, 120);
   border-radius: 35px;
@@ -226,7 +254,7 @@ text-align: center !important;
 }
 .dot:hover{
   transition: 0.6s ease;
-  height: 62px;
+  height: 100px;
 }
 /* The dots/bullets/indicators */
 .dot2 {
@@ -274,6 +302,29 @@ text-align: center !important;
   display: inline-block;
   vertical-align: middle;
   transition: 0.s ease;
+}
+.tip{
+  position: absolute;
+  margin-top: 650px;
+  margin-left: 80px;
+}
+.dot5{
+    cursor: pointer;
+    border-style: none;
+    height: 6px;
+    width: 90px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.4s ease;
+
+}
+.dot5:hover{
+  transition: 0.6s ease;
+}
+.dot5.active{
+  background-color: rgb(0, 0, 0);
+  transition: 0.6s ease;
 }
 #indicator{
   margin-top:17.5rem;
@@ -386,6 +437,12 @@ a {
   to {width: 68%;}
 }
 
+.particle3{
+  position: absolute;
+  width: 150px;
+  right: 200px;
+}
+
 .primaryfont{
   font-family: 'Product Sans';
   font-size: 40px;  
@@ -430,7 +487,7 @@ a {
 .slider{
   position: absolute;
   margin-left: 72rem;
-  padding-top: 16rem;
+  padding-top: 15rem;
   z-index: 20;
 }
 .content .primaryfont{
@@ -523,11 +580,11 @@ margin: 0;
 .video{
   transition: 0.4s ease;
   position:absolute;
-  margin-top:72.4rem;
+  margin-top:75rem;
   margin-left: 815px;
 }
 .video img{
-  width: 65%;
+  width: 40%;
 }
 
 .grad{
@@ -706,7 +763,7 @@ color: black;
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   width: 100%; height: 100%;
-  z-index: 10;
+  z-index: 100;
   padding: 20px;
   box-sizing: border-box;
   background-color: rgb(0,0,0);
@@ -728,9 +785,8 @@ color: black;
   vertical-align: middle;
   position: relative;
   z-index: 20;
-  max-width: 1000;
   box-sizing: border-box;
-  width: 100%;
+  width: 1000px;
   background: black;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -1162,3 +1218,50 @@ color: black;
   .hovicon.effect-9.sub-a:hover i {
       color: #fff;
   }
+
+  .hovicon.effect-2 {
+    color: white;
+    box-shadow: 0 0 0 3px #42a5f5;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.hovicon.effect-2:after {
+    top: -2px;
+    left: -2px;
+    padding: 2px;
+    z-index: -1;
+    background: #42a5f5;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+}
+/* Effect 2b */
+ .hovicon.effect-2.sub-b:hover:after {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.2s;
+    transition: transform 0.4s, opacity 0.2s;
+}
+.hovicon.effect-2.sub-b:hover, .hovicon.effect-2.sub-b:hover i {
+    color: #009EEB;
+}
+#myBtn {
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  z-index: 99;
+  
+  cursor: pointer;
+  padding: 15px 15px;
+  }
+
+.hoveric{
+  background-color: #009EEB;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}

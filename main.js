@@ -38,9 +38,6 @@ $(document).ready(function () {
   flankingItems: 3,
   
   movingToCenter: function () {
-  $('#textbox i').empty();
-  $('#textbox h2').empty();
-  $('#textbox span').empty();
   },
   movedToCenter: function ($item) {
   var caption = $item.data('content');
@@ -49,6 +46,9 @@ $(document).ready(function () {
   var dot = $item.data('number');
   $('#indicator button').removeClass( "active" );
   $('#profile'+[dot]).addClass( "active" );
+  $('#textbox i').empty();
+  $('#textbox h2').empty();
+  $('#textbox span').empty();
   $('#textbox i').append("&#x201c;"+caption+"&#x201d;");
   $('#textbox h2').append(name);
   $('#textbox span').append(org);
@@ -65,7 +65,6 @@ $(document).ready(function () {
     flankingItems: 3,
     
     movingToCenter: function () {
-    $('#textbox2').css('color', 'white');
     },
     movedToCenter: function ($item) {
     var caption = $item.data('content');

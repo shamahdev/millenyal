@@ -73,6 +73,12 @@ img {
   vertical-align: middle;
   max-width: 100%;
 }
+.mySlides {display: none}
+/* Slideshow container */
+.slideshow-container {
+  margin: auto;
+}
+
 section {
   display: block;
   position: relative;
@@ -337,7 +343,12 @@ text-align: center !important;
   text-decoration-line: underline;
 }
 /* Fading animation */
-
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
@@ -347,6 +358,11 @@ text-align: center !important;
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
 .arrow{
 cursor: pointer;
@@ -1264,4 +1280,22 @@ color: black;
   background-color: #009EEB;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.car-one {
+  z-index: 2;
+  opacity: 1;
+
+}
+*:target ~ .car-one {
+  opacity: 0;
+}
+
+#car-one:target ~ .car-one {
+  opacity: 1;
+}
+
+#car-two:target ~ .car-two, #car-three:target ~ .car-three, #car-four:target ~ .car-four, #car-five:target ~ .car-five {
+  z-index: 3;
+  opacity: 1;
 }

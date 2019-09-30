@@ -247,6 +247,17 @@ text-align: center !important;
 }
 
 /* The dots/bullets/indicators */
+.dot7{
+  position: absolute;
+  border-style: none;
+  cursor: pointer;
+  height: 85px;
+  width: 6px !important;
+  background-color: #009EEB;
+  border-radius: 35px;
+  display: block;
+  transition: 0.6s ease;
+}
 .dot{
   border-style: none;
   cursor: pointer;
@@ -985,15 +996,16 @@ color: black;
   .rectangle, .rectangle1, .rectangle2, .rectangle3, .rectangle4, .rectangle5{
     z-index: -5;
   }
-  .rectangle{  
-    
-    width: 100%;
-    height: 75px;
-    bottom: 0;
+  .rectangle{
+    width: 75%;
+  height: 80%;
+    right: 0;
+  
+   margin-top: 78vh;
+   z-index: -99;
     opacity: 0.6;
     filter: alpha(opacity=60);
-    background-color: #1976d2;  ;
-  }
+      }
   span a{
     font-size: 15pt;
   }
@@ -1027,6 +1039,19 @@ color: black;
     right:0;
      opacity:0;
     transition: all 0.5s ease-in-out;
+  }
+
+  .carousel-item.car-one img{
+    cursor: pointer;
+    transition: 0.4s ease;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgba(255, 255, 255, 0);
+  }
+  .carousel-item.car-one img:hover{
+    border-width: 10px !important;
+    border-color: rgba(255, 255, 255, 0);
+    transition: 0.4s ease;
   }
   .arrow-prev{
    
@@ -1216,8 +1241,8 @@ color: black;
     }
     .hovicon {
       display: inline-block;
-      font-size: 30px;
-      line-height: 90px;
+      font-size: 28px;
+      line-height: 100px;
       cursor: pointer;
       margin: 20px;
       width: 90px;
@@ -1338,18 +1363,5 @@ color: black;
 
 .car-one {
   z-index: 2;
-  opacity: 1;
-
-}
-*:target ~ .car-one {
-  opacity: 0;
-}
-
-#car-one:target ~ .car-one {
-  opacity: 1;
-}
-
-#car-two:target ~ .car-two, #car-three:target ~ .car-three, #car-four:target ~ .car-four, #car-five:target ~ .car-five {
-  z-index: 3;
   opacity: 1;
 }

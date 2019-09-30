@@ -30,7 +30,7 @@ $('.fader').css("display", "block");
 
 
 $(document).ready(function () {
-  var carousel = $("#carousel").waterwheelCarousel({
+  $("#carousel").waterwheelCarousel({
   // Config
   autoPlay: 8000,
   separation: 250,
@@ -55,24 +55,31 @@ $(document).ready(function () {
   }
   });
 
-  
 
-  $(document).ready(function() {
     $("#carousel2").waterwheelCarousel({
-      
-    horizon: 110,
-    horizonOffset: -30,
-    horizonOffsetMultiplier: .7,
-    separation: 150,
-    edgeFadeEnabled: true
+    // Config
+    separation: 250,
+    edgeFadeEnabled: true,
+    autoPlay: 8000,
+    separationMultiplier: 0.5,
+    flankingItems: 3,
+    
+    movingToCenter: function () {
+    $('#textbox2').css('color', 'white');
+    },
+    movedToCenter: function ($item) {
+    var caption = $item.data('content');
+    var name = $item.data('title');
+    var dot = $item.data('number');
+    $('#textbox2').css('color', 'black');
+    $('#indicator2 button').removeClass( "active" );
+    $('#profile'+[dot+3]).addClass( "active" );
+    $('#textbox2 span').empty();
+    $('#textbox2 h1').empty();
+    $('#textbox2 span').append(caption);
+    $('#textbox2 h1').append(name);
+    }
     });
-  });
-  //profile slider indicators
-  $('#reload').bind('click', function () {
-    newOptions = eval("(" + $('#newoptions').val() + ")");
-    carousel.reload(newOptions);
-    return false;
-  });
 // PROFILE SLIDER
 
 //CONTENT SLIDER

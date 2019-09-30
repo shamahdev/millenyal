@@ -50,6 +50,7 @@ body {
 }
 img {
   vertical-align: middle;
+  max-width: 100%;
 }
 section {
   display: block;
@@ -212,20 +213,19 @@ text-align: center !important;
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot{
   border-style: none;
   cursor: pointer;
-  height: 8px;
-  width: 90px;
-  margin: 0 2px;
+  height: 48px;
+  width: 2px;
+  margin: 12px 0px;
   background-color: rgb(120, 120, 120);
   border-radius: 35px;
-  display: inline-block;
+  display: block;
   transition: 0.6s ease;
 }
 .dot:hover{
   transition: 0.6s ease;
-  width: 110px;
 }
 /* The dots/bullets/indicators */
 .dot2 {
@@ -428,8 +428,8 @@ a {
 }
 .slider{
   position: absolute;
-  margin-left: 46.5rem;
-  padding-top: 34rem;
+  margin-left: 72rem;
+  padding-top: 16rem;
   z-index: 20;
 }
 .content .primaryfont{
@@ -445,12 +445,16 @@ margin-top: 160px;
   padding:5px;
 }
 
-#carousel {
-  margin-top:140px;
+#carousel{
+  margin-top: 140px;
+  min-width:100%;
+}
+#carousel2{
+  margin-top: 150px;
   width:100%;
 }
-#carousel img {
-  visibility:hidden; /* hide images until carousel can handle them */
+#carousel img, #carousel2 img {
+  display:hidden; /* hide images until carousel can handle them */
   cursor:pointer; /* otherwise it's not as obvious items can be clicked */
   width:220px;
 }
@@ -481,6 +485,11 @@ margin-top: 160px;
 .tab span{
   font-family: 'Product Sans';
   font-size:17px !important;
+  color: #009EEB;
+}
+.tab2 span{
+  font-family: 'Product Sans';
+  font-size:24px !important;
   color: #009EEB;
 }
 .tab i{
@@ -889,12 +898,6 @@ color: black;
      opacity:0;
     transition: all 0.5s ease-in-out;
   }
-  .arrow2{
-    
-      
-    
-  }
-  
   .arrow-prev{
    
     position:absolute;

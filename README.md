@@ -1,2 +1,2 @@
 # WebHiedescom
-Lomba Hiedescom 2019
+Design web babak penyelisihan Hiedescom 2019

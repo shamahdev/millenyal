@@ -2,7 +2,7 @@
 #### 🏆 1# Babak penyisihan dengan skor nilai terbesar
 ## Member/Contributor:
 - Candra Miftah
-- M Rifki Erlanggan
+- M Rifki Erlangga
 - Shaddam Amru Hasibuan
 
 ##### Rekayasa Perangkat Lunak '16

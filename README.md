@@ -13,7 +13,7 @@ Milenyal is my team submission for Hiedescom 2019's elimination round web compet
 * [AOS - Animate on Scroll](https://michalsnik.github.io/aos/)
 * [anime.js](https://animejs.com/)
 
-## Member
+## Team / Contributor
 We're from SMK Negeri 1 Cimahi
 * Candra Miftah
 * [Muhammad Rifki Erlangga](https://github.com/RifkiEr24)

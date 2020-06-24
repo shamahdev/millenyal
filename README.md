@@ -5,7 +5,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/Shaddamah/webhiedescom)
 ![Website](https://img.shields.io/website?url=http%3A%2F%2Fshaddamah.github.io%2Fwebhiedescom%2F)
 
-Milenyal is my team submission for Hiedescom 2019's elimination round web competition built with pure CSS (no css framework)
+Millenyal is my team submission for Hiedescom 2019's elimination round web competition built with pure CSS (no css framework)
 
 🏆 1# elimination round's team with the largest score
 

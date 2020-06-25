@@ -7,7 +7,9 @@
 
 Millenyal is my team submission for Hiedescom 2019's elimination round web competition built with pure CSS (no css framework)
 
-🏆 1# elimination round's team with the largest score
+🏆 1# elimination round's team with the highest score
+
+[Checkout our final's submission](https://github.com/Shaddamah/webhiedescom-final-2019)
 
 ## Javascript library used
 * [AOS - Animate on Scroll](https://michalsnik.github.io/aos/)
